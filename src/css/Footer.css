@@ -1,0 +1,41 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+}
+
+.questions {
+    font-weight: bold;
+    margin: 0;
+    font-size: 8px;
+}
+
+.contact {
+    margin: 0;
+    font-style: italic;
+    font-size: 8px;
+}
+
+.footer p {
+    margin: 2px 0;
+    font-size: 17px;
+}

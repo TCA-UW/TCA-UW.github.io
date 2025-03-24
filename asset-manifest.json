@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e972677a.css",
+    "main.js": "/static/js/main.c3e17d9d.js",
+    "static/js/453.56f46472.chunk.js": "/static/js/453.56f46472.chunk.js",
+    "static/media/evan.png": "/static/media/evan.cfe67bbc99a3e9b37401.png",
+    "static/media/nico.png": "/static/media/nico.a4dd1b1589c0e2eea9e7.png",
+    "static/media/Clubphoto.png": "/static/media/Clubphoto.4e06d8c1d9110cb357a5.png",
+    "static/media/chris.png": "/static/media/chris.0d6482a4aaacaa94d263.png",
+    "static/media/sumedh.png": "/static/media/sumedh.2aabdef7a440210edbab.png",
+    "static/media/lucas.png": "/static/media/lucas.588715e930def4b425a6.png",
+    "static/media/akshai.png": "/static/media/akshai.f505816eb3dd233edf0b.png",
+    "static/media/TCALogo.png": "/static/media/TCALogo.b989342544b674ebf7a3.png",
+    "static/media/cloud-service.png": "/static/media/cloud-service.fda44a908f8a4780ee28.png",
+    "static/media/analysis.png": "/static/media/analysis.a33dae698544af74cf98.png",
+    "static/media/processor.png": "/static/media/processor.9e70b30b9b27163974da.png",
+    "static/media/web-programming.png": "/static/media/web-programming.a78f8477023ede203f83.png",
+    "index.html": "/index.html",
+    "main.e972677a.css.map": "/static/css/main.e972677a.css.map",
+    "main.c3e17d9d.js.map": "/static/js/main.c3e17d9d.js.map",
+    "453.56f46472.chunk.js.map": "/static/js/453.56f46472.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e972677a.css",
+    "static/js/main.c3e17d9d.js"
+  ]
+}

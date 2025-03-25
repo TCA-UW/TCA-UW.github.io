@@ -6,7 +6,7 @@ const About = () => {
     <div className="about-container">
       <h1 className="about-title">About</h1>
       <p className="about-info">
-           TCA is the University of Washington's premiere student-run technology consultancy.
+           TCA is the University of Washington's premier student-run technology consultancy.
            We offer a variety of services tailored at helping companies solve their problems
            using technologies including software development, systems architecture,
            cloud solutions, data analysis, and AI integration. We also help students foster the consulting

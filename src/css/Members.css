@@ -1,43 +1,72 @@
 .members-container {
-    margin-top: 12%;
-    z-index: 10;
-    min-height: 100vh;
-  }
-
-.members-container p{
-    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 6rem;
+    background: #f8f9fa;
 }
 
-.members-container img{
-    align-content: center;
+.members-container table {
+    margin: 2rem auto;
+}
+
+.members-container tr {
+    margin-bottom: 3rem;
+}
+
+.members-container p {
+    text-align: center;
+    color: #062031;
+    font-size: 1.2rem;
+    margin-bottom: 20%;
+}
+
+.members-container h6 {
+    text-align: center;
+    color: #062031;
+    font-size: 1.1rem;
+    margin-bottom: 8%;
+}
+
+.members-container .member-position {
+    text-align: center;
+    color: #062031;
+    font-weight: bold;
+    font-size: 1.3rem;
+   
+}
+
+.members-container img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 300px;
     height: 400px;
-    padding-left:5%;
-    padding-right:5%;
+    padding: 0 5%;
 }
 
 #bigImage:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
 }
+
 .levelOrganization {
     font-size: 2.5rem;
     font-weight: bold;
     color: #062031;
-    margin-bottom: 4%;
+    margin-top: 2rem;
+    margin-bottom: 3%;
     text-transform: uppercase;
     letter-spacing: 2px;
-    position: relative;
     text-align: center;
 }
 
 .levelOrganization::after {
     content: "";
     display: block;
-    width: 400px;
+    width: 600px;
     height: 3px;
     background-color: #216476;
     margin: 10px auto 0;

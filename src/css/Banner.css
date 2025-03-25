@@ -1,0 +1,37 @@
+.banner-container {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 120%;
+    background-color: #216476;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .banner-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    animation: slide-left 15s linear infinite;
+  }
+  
+  .banner-link:hover {
+    text-decoration: underline;
+  }
+  
+  @keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,12 +1,12 @@
 .join-container {
     text-align: center;
     padding: 150px 20px 50px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     margin-bottom: 100px;
-}
-
-.join-title {
+  }
+  
+  .join-title {
     font-size: 3rem;
     font-weight: bold;
     color: #062031;
@@ -14,9 +14,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-}
-
-.join-title::after {
+  }
+  
+  .join-title::after {
     content: "";
     display: block;
     width: 400px;
@@ -24,18 +24,82 @@
     background-color: #216476;
     margin: 10px auto 0;
     border-radius: 2px;
-}
-
-.join-info {
-    font-size: 1.3rem;
+  }
+  
+  .join-info {
+    font-size: 1.1rem;
     color: #444;
     line-height: 1.8;
     text-align: justify;
     padding: 0 20px;
+    max-width: 850px;
     padding-left: 20px;
     font-style: italic;
-}
+  }
+  
+  .application-card {
+    background-color: #f9fbfd;
+    padding: 30px;
+    max-width: 950px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 40px;
+  }
+  
+  .application-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .application-status {
+    font-size: 1.5rem;
+    color: #062031;
+    max-width: 800px;
+    font-weight: bold;
+    margin-bottom: 7%;
+  }
+  
+  .application-bullets {
+    list-style-type: disc;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  
+  .application-bullets li {
+    margin-bottom: 10px;
+  }
+  
+  .hyperlink {
+    color: #216476;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hyperlink:hover {
+    text-decoration: underline;
+  }
 
-body {
+  .application-link {
+    font-size: 1.6rem;
+    color: #ffffff;
+    background-color: #216476;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 3%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .application-link:hover {
+    background-color: #062031;
+  }
+  
+  body {
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-}
+  }
+  

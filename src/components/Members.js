@@ -15,10 +15,22 @@ const Members = () => {
             </div>
             <table>
                 <tr>
-                    <td><a href="https://www.linkedin.com/in/akshaisrin/"><img src={Akshai} id="bigImage" alt="Akshai Srinivasan"/></a></td>
-                    <td><a href="https://www.linkedin.com/in/sumedh910/"><img src={Sumedh} id="bigImage" alt="Sumedh Chinta"/></a></td>
-                    <td><a href="https://www.linkedin.com/in/christopher-chen-56b889342/"><img src={Chris} id="bigImage" alt="Christopher Chen"/></a></td>
-                    <td><a href="https://www.linkedin.com/in/lucas-varotto-353bb729a/"><img src={Lucas} id="bigImage" alt="Lucas Varotto"/></a></td>
+                    <td>
+                        <h6 className="member-position">President</h6>
+                        <a href="https://www.linkedin.com/in/akshaisrin/" target="_blank" rel="noopener noreferrer"><img src={Akshai} id="bigImage" alt="Akshai Srinivasan"/></a>
+                    </td>
+                    <td>
+                        <h6 className="member-position">Vice President</h6>
+                        <a href="https://www.linkedin.com/in/sumedh910/" target="_blank" rel="noopener noreferrer"><img src={Sumedh} id="bigImage" alt="Sumedh Chinta"/></a>
+                    </td>
+                    <td>
+                        <h6 className="member-position">Director of Marketing</h6>
+                        <a href="https://www.linkedin.com/in/christopher-chen-56b889342/" target="_blank" rel="noopener noreferrer"><img src={Chris} id="bigImage" alt="Christopher Chen"/></a>
+                    </td>
+                    <td>
+                        <h6 className="member-position">Director of Training Operations</h6>
+                        <a href="https://www.linkedin.com/in/lucas-varotto-353bb729a/" target="_blank" rel="noopener noreferrer"><img src={Lucas} id="bigImage" alt="Lucas Varotto"/></a>
+                    </td>
                 </tr>
                 <tr>
                     <td><p>Akshai Srinivasan</p></td>
@@ -28,8 +40,14 @@ const Members = () => {
                 </tr>
                 <tr>
                     <td></td>
-                    <td><a href="https://www.linkedin.com/in/evan-myers-011227298/"><img src={Evan} id="bigImage" alt="Evan Myers" /></a></td>
-                    <td><a href="https://www.linkedin.com/in/nicosusanto/"><img src={Nico} id="bigImage" alt="Nico Susanto"/></a></td>
+                    <td>
+                        <h6 className="member-position">Director of Membership</h6>
+                        <a href="https://www.linkedin.com/in/evan-myers-011227298/" target="_blank" rel="noopener noreferrer"><img src={Evan} id="bigImage" alt="Evan Myers" /></a>
+                    </td>
+                    <td>
+                        <h6 className="member-position">Director of Outreach</h6>
+                        <a href="https://www.linkedin.com/in/nicosusanto/" target="_blank" rel="noopener noreferrer"><img src={Nico} id="bigImage" alt="Nico Susanto"/></a>
+                    </td>
                     <td></td>
                 </tr>
                 <tr>
@@ -44,5 +62,3 @@ const Members = () => {
 }
 
 export default Members;
-
-

@@ -17,7 +17,7 @@ const Header = () => {
           <img src={TCALogo} alt="TCA Logo" className="logo-img" />
         </Link>
         
-        <nav className="nav" style={{marginRight:"-30%"}}>
+        <nav className="nav">
           <Link to="/" className={getNavLinkClass("/")}>Home</Link>
       
           <div 

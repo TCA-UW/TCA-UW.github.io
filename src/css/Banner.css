@@ -1,6 +1,6 @@
 .banner-container {
-    position: fixed;
-    top: 80px;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 120%;
     background-color: #216476;

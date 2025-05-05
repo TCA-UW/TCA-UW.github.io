@@ -112,3 +112,56 @@
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
   }
   
+  @media (max-width: 768px) {
+    .join-container {
+      padding: 5% 15px 4rem;
+    }
+    
+    .join-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+    
+    .join-title::after {
+      width: 70%;
+      max-width: 250px;
+    }
+    
+    .join-image-container {
+      margin-bottom: 30px;
+    }
+    
+    .join-info {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: left;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .join-container {
+      padding: 8% 12px 3rem;
+    }
+    
+    .join-title {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+    
+    .join-title::after {
+      width: 60%;
+      max-width: 200px;
+      height: 2px;
+    }
+    
+    .join-image-container {
+      margin-bottom: 25px;
+    }
+    
+    .join-info {
+      font-size: 0.95rem;
+      padding: 0 5px;
+    }
+  }

@@ -17,23 +17,28 @@ const Services = () => {
         scalable growth. Whether you need to build a custom application, optimize your infrastructure, or
         adopt innovative technologies, TCA is here to guide you toward success.
       </p>
+
       <div className="services-icons">
         <div className="service-item">
           <img src={codeIcon} alt="System Design" className="service-icon"  />
           <p className="service-name">System Design</p>
         </div>
+
         <div className="service-item">
           <img src={cloudIcon} alt="Cloud Solutions" className="service-icon" />
           <p className="service-name">Cloud Solutions</p>
         </div>
+
         <div className="service-item">
           <img src={chartIcon} alt="Data Analysis" className="service-icon" />
           <p className="service-name">Data Analysis</p>
         </div>
+
         <div className="service-item">
           <img src={dbIcon} alt="Database Management" className="service-icon" />
           <p className="service-name">Database Management</p>
         </div>
+        
       </div>
     </div>
   );

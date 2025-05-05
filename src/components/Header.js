@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import '../css/Header.css';
+import React, { useState } from 'react'; 
+import { useLocation, Link } from 'react-router-dom'; 
+import '../css/Header.css'; 
 import TCALogo from '../assets/TCALogo.png';
 
 const Header = () => {
   const location = useLocation();
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isMembersDropdownOpen, setIsMembersDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const getNavLinkClass = (path) =>
     location.pathname === path ? "active-nav" : "nav-link";
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header className="header-container">
@@ -18,26 +27,36 @@ const Header = () => {
           <img src={TCALogo} alt="TCA Logo" className="logo-img" />
         </Link>
         
-        <nav className="nav">
-          <Link to="/" className={getNavLinkClass("/")}>Home</Link>
-      
-          <div 
+        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </span>
+        </button>
+        
+        <nav className={`nav ${isMobileMenuOpen ? 'mobile-nav-open' : ''}`}>
+          <Link to="/" className={getNavLinkClass("/")} onClick={closeMobileMenu}>Home</Link>
+          
+          <div
             className="dropdown"
             onMouseEnter={() => setIsAboutDropdownOpen(true)}
             onMouseLeave={() => setIsAboutDropdownOpen(false)}
           >
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className={`${getNavLinkClass("/about")} dropdown-toggle`}
+              onClick={closeMobileMenu}
             >
               About
               <span className="dropdown-caret">▼</span>
             </Link>
-            {isAboutDropdownOpen && (
+            {(isAboutDropdownOpen || isMobileMenuOpen) && (
               <div className="dropdown-menu">
-                <Link 
-                  to="/about/subteams" 
+                <Link
+                  to="/about/subteams"
                   className={getNavLinkClass("/about/subteams")}
+                  onClick={closeMobileMenu}
                 >
                   Subteams
                 </Link>
@@ -45,39 +64,42 @@ const Header = () => {
             )}
           </div>
           
-          <div 
+          <div
             className="dropdown"
             onMouseEnter={() => setIsMembersDropdownOpen(true)}
             onMouseLeave={() => setIsMembersDropdownOpen(false)}
           >
-            <Link 
-              to="/members" 
+            <Link
+              to="/members"
               className={`${getNavLinkClass("/members")} dropdown-toggle`}
+              onClick={closeMobileMenu}
             >
               Members
               <span className="dropdown-caret">▼</span>
             </Link>
-            {isMembersDropdownOpen && (
+            {(isMembersDropdownOpen || isMobileMenuOpen) && (
               <div className="dropdown-menu">
-                <Link 
-                  to="/members/executive-team" 
+                <Link
+                  to="/members/executive-team"
                   className={getNavLinkClass("/members/executive-team")}
+                  onClick={closeMobileMenu}
                 >
                   Executive Team
                 </Link>
-                <Link 
-                  to="/members/consultants" 
+                <Link
+                  to="/members/consultants"
                   className={getNavLinkClass("/members/consultants")}
+                  onClick={closeMobileMenu}
                 >
                   Consultants
                 </Link>
               </div>
             )}
           </div>
-
-          <Link to="/services" className={getNavLinkClass("/services")}>Services</Link>
-          <Link to="/join" className={getNavLinkClass("/join")}>Join</Link>
-          <Link to="/faq" className={getNavLinkClass("/faq")}>FAQ</Link>
+          
+          <Link to="/services" className={getNavLinkClass("/services")} onClick={closeMobileMenu}>Services</Link>
+          <Link to="/join" className={getNavLinkClass("/join")} onClick={closeMobileMenu}>Join</Link>
+          <Link to="/faq" className={getNavLinkClass("/faq")} onClick={closeMobileMenu}>FAQ</Link>
         </nav>
       </div>
     </header>

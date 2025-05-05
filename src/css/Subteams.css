@@ -1,88 +1,184 @@
 .subteams-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3% 20px 6rem;
-    max-width: 1000px;
-    margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 20px 6rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.subteams-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #062031;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.subteams-title::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 3px;
+  background-color: #216476;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.subteams-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.subteams-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.subteams-info {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 0 20px;
+  font-style: italic;
+  max-width: 1200px;
+  margin-top: 5%;
+  margin-bottom: 40px;
+}
+
+.subteam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #f9fbfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.subteam:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.subteam-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #062031;
+  margin-right: 30px;
+  flex-basis: 30%;
+}
+
+.subteam-info {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+  flex-basis: 65%;
+}
+
+body {
+  background: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .subteams-container {
+    padding: 5% 15px 4rem;
   }
   
   .subteams-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #062031;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-  }
-
-  .subteams-title::after {
-    content: "";
-    display: block;
-    width: 400px;
-    height: 3px;
-    background-color: #216476;
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-
-  .subteams-image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
   }
   
+  .subteams-title::after {
+    width: 70%;
+    max-width: 250px;
+  }
+  
+  .subteams-image-container {
+    margin-bottom: 30px;
+  }
   
   .subteams-info {
-    font-size: 1.05rem;
-    color: #444;
-    line-height: 1.8;
-    text-align: justify;
-    padding: 0 20px;
-    font-style: italic;
-    max-width: 1200px;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 10px;
+    margin-top: 20px;
   }
   
   .subteam {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    background-color: #f9fbfd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 1000px;
-  }
-
-  .subteam:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
   }
   
   .subteam-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #062031;
-    margin-right: 30px;
-    flex-basis: 30%;
+    flex-basis: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: left;
   }
   
   .subteam-info {
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
-    text-align: left;
-    flex-basis: 65%;
+    flex-basis: auto;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subteams-container {
+    padding: 8% 12px 3rem;
   }
   
-  body {
-    background: #f8f9fa;
+  .subteams-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
   }
   
+  .subteams-title::after {
+    width: 60%;
+    max-width: 200px;
+    height: 2px;
+  }
+  
+  .subteams-image-container {
+    margin-bottom: 25px;
+  }
+  
+  .subteams-info {
+    font-size: 0.95rem;
+    padding: 0 5px;
+    margin-top: 15px;
+  }
+  
+  .subteam {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .subteam-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subteam-info {
+    font-size: 0.95rem;
+  }
+}

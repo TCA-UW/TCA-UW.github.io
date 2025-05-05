@@ -47,19 +47,6 @@
     margin-bottom: 5%;
   }
   
-
-  @media (max-width: 900px) {
-    .consultants-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .consultants-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
   .consultant-card {
     text-align: center;
   }
@@ -91,4 +78,108 @@
     margin-top: 0.5rem;
     margin-bottom: 5%;
   }
+
+  @media (max-width: 900px) {
+    .consultants-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
   
+    .levelOrganizationConsultants h1 {
+      font-size: 2.5rem;
+    }
+  
+    .levelOrganizationConsultants h1::after {
+      width: 70%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .consultants-container {
+      padding: 5% 15px 3rem;
+    }
+  
+    .levelOrganizationConsultants h1 {
+      font-size: 2.2rem;
+      letter-spacing: 1.5px;
+    }
+  
+    .levelOrganizationConsultants h1::after {
+      width: 60%;
+      max-width: 250px;
+    }
+  
+    .levelOrganizationConsultants h3 {
+      font-size: 1.8rem;
+      letter-spacing: 0.8px;
+    }
+  
+    .consultant-name {
+      font-size: 1.1rem;
+    }
+  
+    .consultant-major {
+      font-size: 1rem;
+    }
+  
+    .consultants-grid {
+      gap: 2.5rem;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .consultants-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .levelOrganizationConsultants h1 {
+      font-size: 2rem;
+      margin-bottom: 4%;
+    }
+  
+    .levelOrganizationConsultants h3 {
+      font-size: 1.6rem;
+      margin-bottom: -10%;
+    }
+  
+  
+  @media (max-width: 480px) {
+    .consultants-container {
+      padding: 8% 12px 2rem;
+    }
+  
+    .levelOrganizationConsultants h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+  
+    .levelOrganizationConsultants h1::after {
+      width: 50%;
+      max-width: 200px;
+      height: 2px;
+    }
+  
+    .levelOrganizationConsultants h3 {
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+  
+    .consultant-name {
+      font-size: 1rem;
+      margin-top: 0.8rem;
+    }
+  
+    .consultant-major {
+      font-size: 0.9rem;
+    }
+  
+    .consultants-grid {
+      gap: 1.8rem;
+      margin-top: 7%;
+      margin-bottom: 7%;
+    }
+  }}

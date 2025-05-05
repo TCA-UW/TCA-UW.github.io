@@ -6,7 +6,9 @@ const About = () => {
   return (
     <div className="about-container">
       <h1 className="about-title">About</h1>
-      <img src={AboutImage} alt="About us" className="about-image" />
+      <div className="about-image-container">
+        <img src={AboutImage} alt="About us" className="about-image" />
+      </div>
       <p className="about-info">
         TCA is the University of Washington's premier student-run technology consultancy.
         We offer a variety of services tailored at helping companies solve their problems

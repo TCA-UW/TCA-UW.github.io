@@ -1,0 +1,94 @@
+.consultants-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3% 20px 4rem;
+    background: #f8f9fa;
+  }
+  
+  .levelOrganizationConsultants h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #062031;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 2%;
+  }
+  
+  .levelOrganizationConsultants h1::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 3px;
+    background-color: #216476;
+    margin: 5px auto 0;
+    border-radius: 2px;
+    margin-bottom: 20%
+  }
+  
+  .levelOrganizationConsultants h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #062031;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -15%
+  }
+  
+  .consultants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+
+  @media (max-width: 900px) {
+    .consultants-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .consultants-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .consultant-card {
+    text-align: center;
+  }
+  
+  .consultant-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .consultant-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .consultant-name {
+    color: #062031;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .consultant-major {
+    color: #000000;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 5%;
+  }
+  

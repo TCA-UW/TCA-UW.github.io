@@ -6,59 +6,81 @@ import Sumedh from "../assets/headshots/sumedh.png";
 import Chris from "../assets/headshots/chris.png";
 import Evan from "../assets/headshots/evan.png";
 import Nico from "../assets/headshots/nico.png";
+import Karah from "../assets/headshots/Karah.jpg";
+
+const members = [
+  {
+    name: "Akshai Srinivasan",
+    position: "President",
+    major: "Computer Engineering & Applied Mathematics",
+    image: Akshai,
+    linkedin: "https://www.linkedin.com/in/akshaisrin/"
+  },
+  {
+    name: "Evan Myers",
+    position: "Vice President",
+    major: "Physics",
+    image: Evan,
+    linkedin: "https://www.linkedin.com/in/evan-myers-011227298/"
+  },
+  {
+    name: "Sumedh Chinta",
+    position: "Director of Training Operations",
+    major: "Finance & Information Systems",
+    image: Sumedh,
+    linkedin: "https://www.linkedin.com/in/sumedh910/"
+  },
+  {
+    name: "Christopher Chen",
+    position: "Director of Marketing",
+    major: "Computer Science",
+    image: Chris,
+    linkedin: "https://www.linkedin.com/in/christopher-chen-56b889342/"
+  },
+  {
+    name: "Lucas Varotto",
+    position: "Director of Membership",
+    major: "Computer Science",
+    image: Lucas,
+    linkedin: "https://www.linkedin.com/in/lucas-varotto-353bb729a/"
+  },
+  {
+    name: "Nico Susanto",
+    position: "Director of Outreach",
+    major: "Computer Science",
+    image: Nico,
+    linkedin: "https://www.linkedin.com/in/nicosusanto/"
+  },
+  {
+    name: "Karah Kim",
+    position: "Associate Director of Marketing and Outreach",
+    major: "HR Management & Marketing",
+    image: Karah,
+    linkedin: "https://www.linkedin.com/in/karah-kim-a08420332/"
+  }
+];
 
 const Members = () => {
-    return (
-        <div className="members-container">
-            <div className="levelOrganization">
-                <h1>Executive Team</h1>
-            </div>
-            <table>
-                <tr>
-                    <td>
-                        <h6 className="member-position">President</h6>
-                        <a href="https://www.linkedin.com/in/akshaisrin/" target="_blank" rel="noopener noreferrer"><img src={Akshai} id="bigImage" alt="Akshai Srinivasan"/></a>
-                    </td>
-                    <td>
-                        <h6 className="member-position">Vice President</h6>
-                        <a href="https://www.linkedin.com/in/sumedh910/" target="_blank" rel="noopener noreferrer"><img src={Sumedh} id="bigImage" alt="Sumedh Chinta"/></a>
-                    </td>
-                    <td>
-                        <h6 className="member-position">Director of Marketing</h6>
-                        <a href="https://www.linkedin.com/in/christopher-chen-56b889342/" target="_blank" rel="noopener noreferrer"><img src={Chris} id="bigImage" alt="Christopher Chen"/></a>
-                    </td>
-                    <td>
-                        <h6 className="member-position">Director of Training Operations</h6>
-                        <a href="https://www.linkedin.com/in/lucas-varotto-353bb729a/" target="_blank" rel="noopener noreferrer"><img src={Lucas} id="bigImage" alt="Lucas Varotto"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td><p>Akshai Srinivasan</p></td>
-                    <td><p>Sumedh Chinta</p></td>
-                    <td><p>Christopher Chen</p></td>
-                    <td><p>Lucas Varotto</p></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <h6 className="member-position">Director of Membership</h6>
-                        <a href="https://www.linkedin.com/in/evan-myers-011227298/" target="_blank" rel="noopener noreferrer"><img src={Evan} id="bigImage" alt="Evan Myers" /></a>
-                    </td>
-                    <td>
-                        <h6 className="member-position">Director of Outreach</h6>
-                        <a href="https://www.linkedin.com/in/nicosusanto/" target="_blank" rel="noopener noreferrer"><img src={Nico} id="bigImage" alt="Nico Susanto"/></a>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><p>Evan Myers</p></td>
-                    <td><p>Nico Susanto</p></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-    );
+  return (
+    <div className="members-container">
+      <div className="levelOrganization">
+        <h1>Executive Team</h1>
+      </div>
+
+      <div className="members-grid">
+        {members.map((member) => (
+          <div className="member-card" key={member.name}>
+            <h6 className="member-position">{member.position}</h6>
+            <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+              <img src={member.image} className="member-image" alt={member.name} />
+            </a>
+            <p className="member-name">{member.name}</p>
+            <p className="member-major">{member.major}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Members;

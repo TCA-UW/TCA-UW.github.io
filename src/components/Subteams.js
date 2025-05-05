@@ -1,10 +1,12 @@
 import React from "react";
 import "../css/Subteams.css";
+import SubteamsImage from "../assets/Subteam1.jpg";
 
 const Subteams = () => {
   return (
     <div className="subteams-container">
       <h1 className="subteams-title">Subteams</h1>
+      <img src={SubteamsImage} alt="About us" className="about-image" />
       <p className="subteams-info">
       Each engagement will have a project manager, a tech subteam, and a business subteam. The tech and business subteams will collaborate heavily 
       to create a solution for the client, but each subteam has a different focus (described below). However, there is still lots of overlap between

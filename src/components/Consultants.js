@@ -21,7 +21,7 @@ import BT9 from "../assets/headshots/ChloeC.jpg";
 
 const consultants = {
   projectManagers: [
-    { name: "Brianna Zhou", major: "Information Systems", image: PM1, linkedin: "https://www.linkedin.com/in/brianna-zhou/" },
+    { name: "Brianna Zhou", major: "Informatics", image: PM1, linkedin: "https://www.linkedin.com/in/brianna-zhou/" },
     { name: "Gus Abramowitz", major: "Business Administration & Informatics", image: PM2, linkedin: "https://www.linkedin.com/in/gus-abramowitz-4328122aa/" },
     { name: "Helen Wu", major: "Informatics", image: PM3, linkedin: "https://www.linkedin.com/in/heleninformation/" }
   ],

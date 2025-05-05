@@ -22,14 +22,14 @@ import BT9 from "../assets/headshots/ChloeC.jpg";
 const consultants = {
   projectManagers: [
     { name: "Brianna Zhou", major: "Informatics", image: PM1, linkedin: "https://www.linkedin.com/in/brianna-zhou/" },
-    { name: "Gus Abramowitz", major: "Business Administration & Informatics", image: PM2, linkedin: "https://www.linkedin.com/in/gus-abramowitz-4328122aa/" },
+    { name: "Gus Abramowitz", major: "Information Systems", image: PM2, linkedin: "https://www.linkedin.com/in/gus-abramowitz-4328122aa/" },
     { name: "Helen Wu", major: "Informatics", image: PM3, linkedin: "https://www.linkedin.com/in/heleninformation/" }
   ],
   techTeam: [
     { name: "Chloe Gao", major: "Applied Mathematics & Data Science", image: TT1, linkedin: "https://www.linkedin.com/in/chloejgao/" },
     { name: "Jessica Chendra", major: "Informatics & Marketing", image: TT2, linkedin: "https://www.linkedin.com/in/jessica-chendra-a8a0a8207/" },
     { name: "Ulysses Vasquez-Perez", major: "Accounting & Information Systems", image: TT3, linkedin: "https://www.linkedin.com/in/ulysses-vazquez/" },
-    { name: "Bhavya Rajput", major: "Informatics & Finance", image: TT4, linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/" },
+    { name: "Bhavya Rajput", major: "Informatics", image: TT4, linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/" },
     { name: "Jonathan Herdianshah", major: "Informatics & Statistics", image: TT5, linkedin: "https://www.linkedin.com/in/jonathanherdianshah/" },
     { name: "Vainavi Thakkar", major: "Computer Science", image: TT6, linkedin: "https://www.linkedin.com/in/vainavithakkar24/" }
   ],

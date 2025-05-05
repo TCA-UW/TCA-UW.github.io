@@ -100,6 +100,7 @@ const Header = () => {
           <Link to="/services" className={getNavLinkClass("/services")} onClick={closeMobileMenu}>Services</Link>
           <Link to="/join" className={getNavLinkClass("/join")} onClick={closeMobileMenu}>Join</Link>
           <Link to="/faq" className={getNavLinkClass("/faq")} onClick={closeMobileMenu}>FAQ</Link>
+          <Link to="/contact" className={getNavLinkClass("/contact")} onClick={closeMobileMenu}>Contact</Link>
         </nav>
       </div>
     </header>

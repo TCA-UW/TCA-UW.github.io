@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Services from './components/Services';
 import Subteams from './components/Subteams';
 import Consultants from './components/Consultants';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/join" element={<Join />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about/subteams" element={<Subteams />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <footer className="Footer">

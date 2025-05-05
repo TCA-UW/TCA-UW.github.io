@@ -12,7 +12,7 @@ const Subteams = () => {
       <p className="subteams-info">
         Each engagement will have a project manager, a tech subteam, and a business subteam. The tech and business subteams will collaborate heavily 
         to create a solution for the client, but each subteam has a different focus (described below). However, there is still lots of overlap between
-        subteams through various phases of the client project like the discovery phase, the initial research phase, etc. Please note that you can only join one subteam.
+        subteams through various phases of the client project like the discovery phas and the initial research phase. Please note that you can only join one subteam.
       </p>
       
       <div className="subteam">

@@ -25,7 +25,7 @@ const FAQ = () => {
       question: "What majors does TCA accept?",
       answer: "While we are in the process of getting affiliated with the Paul G. Allen School of Computer Science\
               and Engineering, we hire members across every major! TCA has both a tech team and a business teams,\
-              so as long as you're interested in joining onr of these groups, we highly encourage you to apply!"
+              so as long as you're interested in joining one of these groups, we highly encourage you to apply!"
     },
     {
       question: "What's the difference between TCA and UW's other consulting RSOs?",
@@ -40,7 +40,7 @@ const FAQ = () => {
       answer: "Not at all! TCA has both a tech team and a business team, so we accept members from both technical \
                and non-technical backgrounds. We only ask that members applying to the tech team have either taken CSE coursework \
                above CSE 122 or have taken and have placed into CSE 123 on the Allen School self-guided 12x placement exam. We will also \
-               have regular workshops where we will cove industry-level CS and business concepts including system design, database management, \
+               have regular workshops where we will cover industry-level CS and business concepts including system design, database management, \
                stakeholder analysis, and more!"
     },
     {

@@ -39,12 +39,13 @@
   
   .consultants-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 4rem;
     max-width: 1200px;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
+    justify-items: center;
   }
   
   .consultant-card {
@@ -52,13 +53,14 @@
   }
   
   .consultant-image {
-    width: 100%;
+    width: auto;
+    height: 450px;
     max-width: 300px;
-    height: auto;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
-  }
+ }
   
   .consultant-image:hover {
     transform: scale(1.05);

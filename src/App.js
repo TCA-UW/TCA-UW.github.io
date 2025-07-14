@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Header from './components/Header';
 import FAQ from './components/FAQ';
 import Members from './components/Members';
+import SubExec from './components/ExecSubMembers';
 import Home from './components/Home';
 import About from './components/About';
 import Join from './components/Join';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/members" element={<Navigate to="/members/executive-team" replace />} />
             <Route path="/members/executive-team" element={<Members />} />
+            <Route path="/members/ExecSubMembers" element={<SubExec />} />
             <Route path="/members/consultants" element={<Consultants />} />
             <Route path="/join" element={<Join />} />
             <Route path="/services" element={<Services />} />

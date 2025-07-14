@@ -87,6 +87,13 @@ const Header = () => {
                   Executive Team
                 </Link>
                 <Link
+                  to="/members/ExecSubMembers"
+                  className={getNavLinkClass("/members/ExecSubMembers")}
+                  onClick={closeMobileMenu}
+                >
+                  Executive SubTeam
+                </Link>
+                <Link
                   to="/members/consultants"
                   className={getNavLinkClass("/members/consultants")}
                   onClick={closeMobileMenu}

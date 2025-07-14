@@ -1,12 +1,12 @@
 import React from 'react';
 import "../css/Members.css";
-import Lucas from "../assets/headshots/lucas.png";
 import Akshai from "../assets/headshots/akshai.png";
 import Sumedh from "../assets/headshots/sumedh.png";
-import Chris from "../assets/headshots/chris.png";
-import Evan from "../assets/headshots/evan.png";
 import Nico from "../assets/headshots/nico.png";
 import Karah from "../assets/headshots/Karah.jpg";
+import Primmy from "../assets/headshots/Primmy.jpg";
+import Angie from "../assets/headshots/Angie.jpg";
+import Simon from "../assets/headshots/Simon.jpg";
 
 const members = [
   {
@@ -17,32 +17,11 @@ const members = [
     linkedin: "https://www.linkedin.com/in/akshaisrin/"
   },
   {
-    name: "Evan Myers",
-    position: "Vice President",
-    major: "Physics",
-    image: Evan,
-    linkedin: "https://www.linkedin.com/in/evan-myers-011227298/"
-  },
-  {
     name: "Sumedh Chinta",
-    position: "Director of Training Operations",
+    position: "Co President",
     major: "Finance & Information Systems",
     image: Sumedh,
     linkedin: "https://www.linkedin.com/in/sumedh910/"
-  },
-  {
-    name: "Christopher Chen",
-    position: "Director of Marketing",
-    major: "Computer Science",
-    image: Chris,
-    linkedin: "https://www.linkedin.com/in/christopher-chen-56b889342/"
-  },
-  {
-    name: "Lucas Varotto",
-    position: "Director of Membership",
-    major: "Computer Science",
-    image: Lucas,
-    linkedin: "https://www.linkedin.com/in/lucas-varotto-353bb729a/"
   },
   {
     name: "Nico Susanto",
@@ -52,11 +31,32 @@ const members = [
     linkedin: "https://www.linkedin.com/in/nicosusanto/"
   },
   {
+    name: "Angie Niu",
+    position: "Director of Consulting Operations",
+    major: "Finance & Information Systems",
+    image: Angie,
+    linkedin: "https://www.linkedin.com/in/angieniu/"
+  },
+  {
     name: "Karah Kim",
-    position: "Associate Director of Marketing and Outreach",
+    position: "Director of Marketing",
     major: "HR Management & Marketing",
     image: Karah,
     linkedin: "https://www.linkedin.com/in/karah-kim-a08420332/"
+  },
+  {
+    name: "Simon Sun",
+    position: "Director of Training Operations",
+    major: "Finance & Information Systems",
+    image: Simon,
+    linkedin: "https://www.linkedin.com/in/simon-sun-45b04b335/"
+  },
+  {
+    name: "Primmy Wanaprapa",
+    position: "Director of Membership",
+    major: "Informatics",
+    image: Primmy,
+    linkedin: "https://www.linkedin.com/in/prim-singhasuvich-wanaprapa-48abaa27b/"
   }
 ];
 

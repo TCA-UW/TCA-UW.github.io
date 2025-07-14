@@ -10,13 +10,9 @@ import TT4 from "../assets/headshots/Bhavya.jpg";
 import TT5 from "../assets/headshots/Jonathan.jpg";
 import TT6 from "../assets/headshots/Vainavi.jpg";
 import BT1 from "../assets/headshots/Kian.jpg";
-import BT2 from "../assets/headshots/Ishan.jpg";
-import BT3 from "../assets/headshots/Justin.jpg";
 import BT4 from "../assets/headshots/Angie.jpg";
 import BT5 from "../assets/headshots/Tashia.jpg";
 import BT6 from "../assets/headshots/Tristan.jpeg";
-import BT7 from "../assets/headshots/Justin.jpg";
-import BT8 from "../assets/headshots/Simon.jpg";
 import BT9 from "../assets/headshots/ChloeC.jpg";
 
 const consultants = {
@@ -30,18 +26,14 @@ const consultants = {
     { name: "Jessica Chendra", major: "Informatics & Marketing", image: TT2, linkedin: "https://www.linkedin.com/in/jessica-chendra-a8a0a8207/" },
     { name: "Ulysses Vasquez-Perez", major: "Accounting & Information Systems", image: TT3, linkedin: "https://www.linkedin.com/in/ulysses-vazquez/" },
     { name: "Bhavya Rajput", major: "Informatics", image: TT4, linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/" },
-    { name: "Jonathan Herdianshah", major: "Informatics & Statistics", image: TT5, linkedin: "https://www.linkedin.com/in/jonathanherdianshah/" },
+    { name: "Jonathan Herdianshah", major: "Informatics & Economics", image: TT5, linkedin: "https://www.linkedin.com/in/jonathanherdianshah/" },
     { name: "Vainavi Thakkar", major: "Computer Science", image: TT6, linkedin: "https://www.linkedin.com/in/vainavithakkar24/" }
   ],
   businessTeam: [
     { name: "Kian Gaskill", major: "Business Administration", image: BT1, linkedin: "https://www.linkedin.com/in/kian-gaskill-301954348/" },
-    { name: "Ishan Kamran", major: "Finance & Information Systems", image: BT2, linkedin: "https://www.linkedin.com/in/ishankamran/" },
-    { name: "Justin Tu", major: "Finance & Accounting for Businesses", image: BT3, linkedin: "https://www.linkedin.com/in/tu-justin/" },
     { name: "Angie Niu", major: "Finance & Information Systems", image: BT4, linkedin: "https://www.linkedin.com/in/angieniu/" },
     { name: "Tashia Lo", major: "Operations and Supply Chain & Marketing", image: BT5, linkedin: "https://www.linkedin.com/in/natashialo/" },
     { name: "Tristan Tang", major: "Finance & Marketing", image: BT6, linkedin: "https://www.linkedin.com/in/tristan-tang6/" },
-    { name: "Ethan Ohlson", major: "Business Supply Chain & Marketing", image: BT7, linkedin: "https://www.linkedin.com/in/ethan-ohlson-274615240/" },
-    { name: "Simon Sun", major: "Finance & Information Systems", image: BT8, linkedin: "https://www.linkedin.com/in/simon-sun-45b04b335/" },
     { name: "Chloe Chai", major: "Accounting & Economics", image: BT9, linkedin: "https://www.linkedin.com/in/chloe-chai/" }
   ]
 };

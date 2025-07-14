@@ -33,7 +33,7 @@ const ExecSubMembers = () => {
   return (
     <div className="consultants-container">
       <div className="levelOrganizationConsultants">
-        <h1>Sub-Executive Team</h1>
+        <h1>Executive Subteam</h1>
       </div>
 
       <div className="levelOrganizationConsultants">

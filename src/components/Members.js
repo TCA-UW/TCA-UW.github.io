@@ -11,22 +11,22 @@ import Simon from "../assets/headshots/Simon.jpg";
 const members = [
   {
     name: "Akshai Srinivasan",
-    position: "President",
+    position: "Co-President",
     major: "Computer Engineering & Applied Mathematics",
     image: Akshai,
     linkedin: "https://www.linkedin.com/in/akshaisrin/"
   },
   {
     name: "Sumedh Chinta",
-    position: "Co President",
+    position: "Co-President",
     major: "Finance & Information Systems",
     image: Sumedh,
     linkedin: "https://www.linkedin.com/in/sumedh910/"
   },
   {
-    name: "Nico Susanto",
+    name: "Nicolas Susanto",
     position: "Director of Outreach",
-    major: "Computer Science",
+    major: "Computer Science & Entrepreneurship",
     image: Nico,
     linkedin: "https://www.linkedin.com/in/nicosusanto/"
   },
@@ -52,7 +52,7 @@ const members = [
     linkedin: "https://www.linkedin.com/in/simon-sun-45b04b335/"
   },
   {
-    name: "Primmy Wanaprapa",
+    name: "Prim Wanaprapa",
     position: "Director of Membership",
     major: "Informatics",
     image: Primmy,

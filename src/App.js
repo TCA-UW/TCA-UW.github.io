@@ -28,7 +28,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/members" element={<Navigate to="/members/executive-team" replace />} />
             <Route path="/members/executive-team" element={<Members />} />
-            <Route path="/members/ExecSubMembers" element={<SubExec />} />
+            <Route path="/members/exec-subteams" element={<SubExec />} />
             <Route path="/members/consultants" element={<Consultants />} />
             <Route path="/join" element={<Join />} />
             <Route path="/services" element={<Services />} />

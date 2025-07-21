@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc95ad48.css",
-    "main.js": "/static/js/main.b1a7b299.js",
+    "main.js": "/static/js/main.ae97a1ab.js",
     "static/js/453.a5a847af.chunk.js": "/static/js/453.a5a847af.chunk.js",
     "static/media/Subteam1.jpg": "/static/media/Subteam1.536de754f64ffa74fbd1.jpg",
     "static/media/Join1.jpg": "/static/media/Join1.b84eb9284cb6cefa2a44.jpg",
@@ -27,6 +27,7 @@
     "static/media/TCALogo.png": "/static/media/TCALogo.b989342544b674ebf7a3.png",
     "static/media/Karah.jpg": "/static/media/Karah.03a72046803a987d1af8.jpg",
     "static/media/Primmy.jpg": "/static/media/Primmy.48acae122c14e92f5e91.jpg",
+    "static/media/Roman.jpg": "/static/media/Roman.406dd51226061046eedc.jpg",
     "static/media/Tatevik.jpg": "/static/media/Tatevik.a354de1ef15c2d427825.jpg",
     "static/media/Seattle.jpeg": "/static/media/Seattle.3d2e0d13c8bbda72032b.jpeg",
     "static/media/Hannah.jpg": "/static/media/Hannah.f427005b59c4f23cc9da.jpg",
@@ -35,11 +36,11 @@
     "static/media/web-programming.png": "/static/media/web-programming.a78f8477023ede203f83.png",
     "index.html": "/index.html",
     "main.cc95ad48.css.map": "/static/css/main.cc95ad48.css.map",
-    "main.b1a7b299.js.map": "/static/js/main.b1a7b299.js.map",
+    "main.ae97a1ab.js.map": "/static/js/main.ae97a1ab.js.map",
     "453.a5a847af.chunk.js.map": "/static/js/453.a5a847af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc95ad48.css",
-    "static/js/main.b1a7b299.js"
+    "static/js/main.ae97a1ab.js"
   ]
 }

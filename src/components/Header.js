@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState, useEffect } from 'react'; 
 import { useLocation, Link } from 'react-router-dom'; 
 import '../css/Header.css'; 
 import TCALogo from '../assets/TCALogo.png';
@@ -8,6 +8,33 @@ const Header = () => {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isMembersDropdownOpen, setIsMembersDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);     
+  const [compact, setCompact] = useState(false);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    const HIDE_AFTER = 20;   
+    const JITTER = 5;        
+
+    const onScroll = () => {
+      const y = window.scrollY;
+
+      setCompact(y > 80);
+
+      if (y <= 0) {
+        setHidden(false);           
+      } else if (y - lastY > JITTER && y > HIDE_AFTER) {
+        setHidden(true);            
+      } else if (lastY - y > JITTER) {
+        setHidden(false);           
+      }
+
+      lastY = y;
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const getNavLinkClass = (path) =>
     location.pathname === path ? "active-nav" : "nav-link";
@@ -21,7 +48,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header-container">
+    <header className={`header-container ${compact ? 'compact' : ''} ${hidden ? 'hidden' : ''}`}>
       <div className="nav-wrapper">
         <Link to="/" className="logo">
           <img src={TCALogo} alt="TCA Logo" className="logo-img" />
@@ -111,6 +138,7 @@ const Header = () => {
         </nav>
       </div>
     </header>
+    
   );
 };
 

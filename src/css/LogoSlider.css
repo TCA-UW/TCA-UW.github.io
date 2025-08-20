@@ -1,0 +1,30 @@
+.logo-slider {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.logo-track {
+  display: inline-flex;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-track img {
+  height: 90px;
+  margin: 0 50px;
+  object-fit: contain;
+  opacity: 1; /* ✅ Full color, no grayscale */
+  transition: transform 0.3s ease;
+}
+
+.logo-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

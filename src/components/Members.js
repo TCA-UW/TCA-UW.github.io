@@ -71,9 +71,30 @@ const Members = () => {
         {members.map((member) => (
           <div className="member-card" key={member.name}>
             <h6 className="member-position">{member.position}</h6>
-            <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-              <img src={member.image} className="member-image" alt={member.name} />
+
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open ${member.name}'s LinkedIn`}
+            >
+              {/* using react ("Ensure the container reserves 3:4 space so nothing jumps") */}
+              <div className="member-image-container">
+                {/* using react ("Add `loading=\"lazy\"` and `decoding=\"async\"` to all non‑hero images") */}
+                {/* using react ("Set explicit width/height to prevent CLS") */}
+                <img
+                  src={member.image}
+                  className="member-image"
+                  alt={`${member.name} headshot`}
+                  width="300"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                />
+              </div>
             </a>
+
             <p className="member-name">{member.name}</p>
             <p className="member-major">{member.major}</p>
           </div>

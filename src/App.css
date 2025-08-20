@@ -25,3 +25,23 @@ html, body, #root {
     width: 100%;
     flex-shrink: 0;
 }
+
+:root {
+  --navH: 88px;          
+  --navH-compact: 60px;  
+}
+
+.Navigation-bar {
+  position: sticky;   
+  top: 0;
+  z-index: 1000;
+}
+
+
+.Navigation-bar.is-fixed + .content {
+  padding-top: var(--navH);
+}
+
+html { scroll-padding-top: var(--navH); }
+.content h1[id], .content h2[id], .content h3[id] { scroll-margin-top: var(--navH); }
+

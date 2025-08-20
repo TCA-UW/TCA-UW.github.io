@@ -13,28 +13,25 @@ const Header = () => {
 
   useEffect(() => {
     let lastY = window.scrollY;
-    const HIDE_AFTER = 20;   
-    const JITTER = 5;        
 
     const onScroll = () => {
       const y = window.scrollY;
-
-      setCompact(y > 80);
-
-      if (y <= 0) {
-        setHidden(false);           
-      } else if (y - lastY > JITTER && y > HIDE_AFTER) {
-        setHidden(true);            
-      } else if (lastY - y > JITTER) {
-        setHidden(false);           
-      }
-
-      lastY = y;
+      const goingDown = y > lastY;
+      const pastTop = y > 50;            // start behavior after 50px
+      setHidden(goingDown && pastTop);   // add/remove "hidden" class
+      setCompact(pastTop);               // optional: add "compact" class if you style it
+      lastY = y <= 0 ? 0 : y;
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  // 2) Recompute top padding whenever header visibility/size can change
+  useEffect(() => {
+    const h = document.querySelector('.header-container')?.offsetHeight || 0;
+    document.documentElement.style.setProperty('--header-h', hidden ? '0px' : `${h}px`);
+  }, [hidden, compact, isMobileMenuOpen, location.pathname]);
 
   const getNavLinkClass = (path) =>
     location.pathname === path ? "active-nav" : "nav-link";
@@ -138,6 +135,8 @@ const Header = () => {
         </nav>
       </div>
     </header>
+
+    
     
   );
 };

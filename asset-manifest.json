@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc95ad48.css",
-    "main.js": "/static/js/main.ae97a1ab.js",
+    "main.css": "/static/css/main.edaeaee9.css",
+    "main.js": "/static/js/main.b244f3c3.js",
     "static/js/453.a5a847af.chunk.js": "/static/js/453.a5a847af.chunk.js",
     "static/media/Subteam1.jpg": "/static/media/Subteam1.536de754f64ffa74fbd1.jpg",
     "static/media/Join1.jpg": "/static/media/Join1.b84eb9284cb6cefa2a44.jpg",
@@ -31,16 +31,19 @@
     "static/media/Tatevik.jpg": "/static/media/Tatevik.a354de1ef15c2d427825.jpg",
     "static/media/Seattle.jpeg": "/static/media/Seattle.3d2e0d13c8bbda72032b.jpeg",
     "static/media/Hannah.jpg": "/static/media/Hannah.f427005b59c4f23cc9da.jpg",
+    "static/media/ey.png": "/static/media/ey.4ba42870eb9476d8ee36.png",
+    "static/media/deloitte.png": "/static/media/deloitte.46ffb6ffd2a12e9259c3.png",
+    "static/media/accenture.png": "/static/media/accenture.8dcd48b1f644bc094944.png",
     "static/media/cloud-service.png": "/static/media/cloud-service.fda44a908f8a4780ee28.png",
     "static/media/analysis.png": "/static/media/analysis.a33dae698544af74cf98.png",
     "static/media/web-programming.png": "/static/media/web-programming.a78f8477023ede203f83.png",
     "index.html": "/index.html",
-    "main.cc95ad48.css.map": "/static/css/main.cc95ad48.css.map",
-    "main.ae97a1ab.js.map": "/static/js/main.ae97a1ab.js.map",
+    "main.edaeaee9.css.map": "/static/css/main.edaeaee9.css.map",
+    "main.b244f3c3.js.map": "/static/js/main.b244f3c3.js.map",
     "453.a5a847af.chunk.js.map": "/static/js/453.a5a847af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc95ad48.css",
-    "static/js/main.ae97a1ab.js"
+    "static/css/main.edaeaee9.css",
+    "static/js/main.b244f3c3.js"
   ]
 }

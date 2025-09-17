@@ -14,6 +14,8 @@ import BT4 from "../assets/headshots/Angie.jpg";
 import BT5 from "../assets/headshots/Tashia.jpg";
 import BT6 from "../assets/headshots/Tristan.jpeg";
 import BT9 from "../assets/headshots/ChloeC.jpg";
+import TT7 from "../assets/headshots/Roman.jpg";
+import BT10 from "../assets/headshots/Justin.jpg";
 
 const consultants = {
   projectManagers: [
@@ -27,11 +29,12 @@ const consultants = {
     { name: "Ulysses Vasquez-Perez", major: "Accounting & Information Systems", image: TT3, linkedin: "https://www.linkedin.com/in/ulysses-vazquez/" },
     { name: "Bhavya Rajput", major: "Informatics", image: TT4, linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/" },
     { name: "Jonathan Herdianshah", major: "Informatics & Economics", image: TT5, linkedin: "https://www.linkedin.com/in/jonathanherdianshah/" },
-    { name: "Vainavi Thakkar", major: "Computer Science", image: TT6, linkedin: "https://www.linkedin.com/in/vainavithakkar24/" }
+    { name: "Vainavi Thakkar", major: "Computer Science", image: TT6, linkedin: "https://www.linkedin.com/in/vainavithakkar24/" },
+    { name: "Roman Nekrasov", major: "Informatics", image: TT7, linkedin: "https://www.linkedin.com/in/romannekrasov/" }
   ],
   businessTeam: [
     { name: "Kian Gaskill", major: "Business Administration", image: BT1, linkedin: "https://www.linkedin.com/in/kian-gaskill-301954348/" },
-    { name: "Angie Niu", major: "Finance & Information Systems", image: BT4, linkedin: "https://www.linkedin.com/in/angieniu/" },
+    { name: "Justin Tu", major: "Finance & Accouting for Business", image: BT10, linkedin: "https://www.linkedin.com/in/tu-justin/" },
     { name: "Tashia Lo", major: "Operations and Supply Chain & Marketing", image: BT5, linkedin: "https://www.linkedin.com/in/natashialo/" },
     { name: "Tristan Tang", major: "Finance & Marketing", image: BT6, linkedin: "https://www.linkedin.com/in/tristan-tang6/" },
     { name: "Chloe Chai", major: "Accounting & Economics", image: BT9, linkedin: "https://www.linkedin.com/in/chloe-chai/" }

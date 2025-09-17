@@ -1,47 +1,8 @@
-/* Full-page hero container */
-.home-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/Seattle.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  flex-direction: column;
-}
 
-/* The black text box in the center of hero */
-.Text-block {
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 60px;
-  border-radius: 12px;
-  color: #fff;
-  text-align: center;
-  width: 50%;
-  z-index: 2;
-}
-
-.Text-block h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.Text-block p {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 /* New section that appears when scrolling */
 .experience-section {
-  padding: 100px 30px;
+  padding: 100px 20px;
   background-color: white;
   text-align: center;
   overflow: hidden;
@@ -50,7 +11,6 @@
 .experience-section h2 {
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 50px;
   color: #222;
 }
 
@@ -72,16 +32,16 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-  .Text-block {
+  .hero-section .hero-content {
     width: 90%;
     padding: 30px;
   }
 
-  .Text-block h1 {
+  .hero-section .hero-content h1 {
     font-size: 2rem;
   }
 
-  .Text-block p {
+  .hero-section .hero-content p {
     font-size: 1rem;
   }
 }
@@ -101,8 +61,8 @@
   position: relative;
 }
 
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.65);
+.hero-section .hero-content {
+  background-color: rgba(0, 0, 0, 0.65) !important;
   padding: 60px;
   border-radius: 12px;
   color: #fff;
@@ -111,14 +71,14 @@
   z-index: 2;
 }
 
-.hero-content h1 {
+.hero-section .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.hero-content p {
+.hero-section .hero-content p {
   font-size: 1.5rem;
   line-height: 1.6;
   max-width: 600px;
@@ -160,7 +120,7 @@
 /* Stats section */
 .stats {
   padding: clamp(60px, 8vw, 100px) 20px;
-  background: #fff; 
+  background: #062031; 
 }
 
 .stats-wrap {
@@ -180,27 +140,27 @@
   font-size: clamp(82px, 6vw, 82px); 
   font-weight: 800;
   letter-spacing: -1px;
-  color: var(--navy);
+  color: white;
 }
 
 .stat-label {
   margin-top: 10px;
   font-size: clamp(24px, 1.5vw, 22px); 
   font-weight: 600;
-  color: var(--navy);
+  color: white;
 }
 
 .stat-sub {
   margin-top: 6px;
   font-size: clamp(17px, 1.2vw, 18px);
-  color: #506976;
+  color: #d7e8ec;
 }
 
 .stats-footnote {
   max-width: 1100px;
   margin: 30px auto 0;
   font-size: 14px;
-  color: #6C838E;
+  color: #d7e8ec;
   text-align: center;
 }
 
@@ -252,7 +212,7 @@
   box-shadow: none;
 }
 
-.stats{ background:#fff; margin-bottom:0; padding-bottom:48px; }
+.stats{ background:#062031; margin-bottom:0; padding-bottom:48px; }
 .experience-section{ background:#fff; margin-top:0; padding-top:20px; }
 
 .section-heading {
@@ -261,7 +221,7 @@
 }
 
 .section-heading h2 {
-  font-size: clamp(32px, 3.5vw, 48px);
+  font-size: clamp(36px, 4vw, 56px);
   font-weight: 800;
   color: #062031; 
   margin: 0 0 12px 0;
@@ -269,12 +229,7 @@
 }
 
 .section-heading p {
-  font-size: clamp(15px, 1.1vw, 18px);
+  font-size: clamp(17px, 1.3vw, 20px);
   color: #415b67;
-  margin: 0;
+  margin-bottom: 30px;
 }
-
-
-
-
-

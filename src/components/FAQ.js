@@ -10,61 +10,58 @@ const FAQ = () => {
   
   const faqData = [
     {
-      question: "What is TCA?",
-      answer: "TCA is the University of Washington's premier student-run technology consultancy. \
-              We offer a variety of services tailored at helping companies solve their problems \
-              using technologies and help students foster the consulting skills they need to \
-              succeed in the industry."
+      question: "What is TCA and what makes us unique?",
+      answer: "TCA (Technology Consulting Association) is the University of Washington's premier student-run technology consultancy. We're the only RSO on campus that bridges the gap between business and technology, offering specialized solutions in software development, data analysis, cloud computing, and digital transformation. Our unique approach combines technical expertise with strategic business thinking, providing real-world consulting experience while helping companies solve complex technology challenges."
     },
     {
-      question: "How can I become a member?",
-      answer: "TCA accepts a new cohort every quarter. Check out the 'Join' page for more information!"
-    },
-    
-    {
-      question: "What majors does TCA accept?",
-      answer: "While we are in the process of getting affiliated with the Paul G. Allen School of Computer Science\
-              and Engineering, we hire members across every major! TCA has both a tech team and a business teams,\
-              so as long as you're interested in joining one of these groups, we highly encourage you to apply!"
+      question: "How can I join TCA?",
+      answer: "TCA recruits new members every quarter! We welcome applications from students across all majors who are passionate about technology and consulting. Visit our 'Join' page for detailed information about our application process, requirements, and upcoming recruitment cycles. We typically look for students who demonstrate strong problem-solving skills, teamwork, and a genuine interest in technology consulting."
     },
     {
-      question: "What's the difference between TCA and UW's other consulting RSOs?",
-      answer: "TCA is completely unique in that we are the only RSO offering tech consulting services on \
-              campus. We aim to bridge the gap between business and technology by providing specialized solutions \
-              in areas such as software development, data analysis, cloud computing, and more. Unlike other consulting RSOs, \
-              TCA focuses exclusively on technology-driven strategies, empowering student-led projects and providing hands-on \
-              experience for members working directly with clients."
+      question: "What majors and backgrounds do you accept?",
+      answer: "We welcome students from ALL majors! While we're affiliated with the Paul G. Allen School of Computer Science and Engineering, TCA values diversity in perspectives and skills. Our organization has both technical and business teams, so whether you're studying computer science, business, engineering, design, or any other field, there's a place for you. We believe diverse teams create better solutions."
     },
     {
-      question: "Do I need to know how to code in order to become a member?",
-      answer: "Not at all! TCA has both a tech team and a business team, so we accept members from both technical \
-               and non-technical backgrounds. We only ask that members applying to the tech team have either taken CSE coursework \
-               above CSE 122 or have taken and have placed into CSE 123 on the Allen School self-guided 12x placement exam. We will also \
-               have regular workshops where we will cover industry-level CS and business concepts including system design, database management, \
-               stakeholder analysis, and more!"
+      question: "Do I need coding experience to join?",
+      answer: "Not necessarily! While our tech team requires some programming background (CSE coursework above CSE 122 or placement into CSE 123), our business team welcomes students from all backgrounds. We also offer regular workshops covering industry-level concepts including system design, database management, stakeholder analysis, and more. If you're passionate about technology and eager to learn, we'd love to have you!"
     },
     {
-      question: "What's the time commitment like for this RSO?",
-      answer: "TCA is a big time commitment, and we estimate that members will spend 5-6 hours each week through weekly meetings, \
-               client engagements, workshops, and more. That being said, we strive to create a flexible and supportive \
-               environment, allowing members to balance their involvement in TCA with their academic and personal \
-               commitments. We strongly believe that the networking opportunities, industry experience, and learning opportunities \
-               this RSO provides will make the time commitment well worth the effort."
+      question: "What's the time commitment?",
+      answer: "TCA is a significant but rewarding commitment. Members typically spend 5-6 hours per week on activities including weekly meetings, client projects, workshops, and team collaboration. We understand the importance of academic success and work to create a flexible, supportive environment. The networking opportunities, industry experience, and professional development you'll gain make this investment in your future career well worth it."
+    },
+    {
+      question: "What types of projects do you work on?",
+      answer: "Our projects span various industries and technologies. We've worked on web applications, data analytics solutions, cloud infrastructure, mobile apps, and digital transformation initiatives. Projects range from startups looking to scale their technology to established companies seeking to modernize their systems. Each project provides hands-on experience with real clients, industry-standard tools, and professional development opportunities."
+    },
+    {
+      question: "What skills will I develop?",
+      answer: "TCA members develop both technical and soft skills essential for consulting careers. Technical skills include software development, data analysis, cloud computing, system design, and project management. Soft skills include client communication, presentation abilities, teamwork, problem-solving, and strategic thinking. You'll also gain experience with industry tools, methodologies, and best practices used by top consulting firms."
+    },
+    {
+      question: "How does TCA differ from other consulting clubs?",
+      answer: "TCA is unique as the only RSO on campus offering technology-focused consulting services. While other consulting clubs focus on business strategy, we specialize in technology solutions and digital transformation. Our members work directly with clients on technical projects, gaining hands-on experience with cutting-edge technologies. This technical focus sets us apart and prepares members for careers in tech consulting, product management, and technology leadership roles."
     }
   ];
 
   return (
     <div className="faq-container">
+      <div className="faq-header">
       <h1 className="faq-title">Frequently Asked Questions</h1>
-      <div className="faq-list">
+        <p className="faq-subtitle">Everything you need to know about TCA</p>
+      </div>
+      <div className="faq-grid">
         {faqData.map((item, index) => (
-          <div className="faq-item" key={index}>
-            <div className="faq-question" onClick={() => handleToggle(index)}>
-              {item.question}
-              <span>{activeIndex === index ? '-' : '+'}</span>
+          <div className={`faq-card ${activeIndex === index ? 'active' : ''}`} key={index}>
+            <div className="faq-card-header" onClick={() => handleToggle(index)}>
+              <h3 className="faq-question">{item.question}</h3>
+              <div className="faq-toggle">
+                <span className={`toggle-icon ${activeIndex === index ? 'active' : ''}`}>
+                  {activeIndex === index ? '−' : '+'}
+                </span>
+              </div>
             </div>
-            <div className={`faq-answer ${activeIndex === index ? 'show' : ''}`}>
-              {item.answer}
+            <div className={`faq-card-content ${activeIndex === index ? 'expanded' : ''}`}>
+              <p className="faq-answer">{item.answer}</p>
             </div>
           </div>
         ))}

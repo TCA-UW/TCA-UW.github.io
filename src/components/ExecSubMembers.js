@@ -17,8 +17,7 @@ const subExecs = {
   ],
   outreachExecutiveSubteam: [
     { name: "Gus Abramowitz", major: "Information Systems", image: Gus, linkedin: "https://www.linkedin.com/in/gus-abramowitz-4328122aa/" },
-    { name: "Chloe Gao", major: "Applied Mathematics & Data Science", image: ChloeG, linkedin: "https://www.linkedin.com/in/chloejgao/" },
-    { name: "Roman Nekrasov", major: "Informatics", image: Roman, linkedin: "https://www.linkedin.com/in/romannekrasov/" }
+    { name: "Chloe Gao", major: "Applied Mathematics & Data Science", image: ChloeG, linkedin: "https://www.linkedin.com/in/chloejgao/" }
   ],
   trainingOperationsExecutiveSubteam: [
     { name: "Hannah Lee", major: "Computer Science", image: Hannah, linkedin: "https://www.linkedin.com/in/hannahstarlee/" },

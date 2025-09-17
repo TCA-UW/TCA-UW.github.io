@@ -1,13 +1,12 @@
 import React from 'react';
 import '../css/Home.css';
 import LogoSlider from './LogoSlider';
-import CountUp from "./CountUp"; 
+import CountUp from "./CountUp";;
 
 const Home = () => {
   return (
     <div>
-
-      {/* Hero Section */}
+       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
           <h1>Technology Consulting Association</h1>
@@ -21,6 +20,17 @@ const Home = () => {
           <h2>Empowering businesses to unlock smarter operations and next-level efficiency through innovative technological solutions</h2>
         </div>
       </section>
+
+      {/* Experience Section */}
+      <section className="experience-section slide-in">
+        <div className="section-heading">
+          <h2>Qualifications</h2>
+          <p>A few of the firms and organizations our members have worked at.</p>
+        </div>
+        <LogoSlider />
+      </section>
+
+      
 
       {/* Statistics Section */}
       <section id="tca-stats" className="stats stats--light">
@@ -48,37 +58,12 @@ const Home = () => {
 
           <div className="stat">
             <div className="stat-num">
-              <CountUp value={85} prefix="~" suffix="%" />
+              <CountUp value={85} suffix="%" />
             </div>
             <div className="stat-label">internship experience</div>
           </div>
         </div>
 
-        {/*
-        <p className="stats-footnote">
-          *Internal estimate based on members who completed the prep track.
-        </p>
-        */}
-      </section>
-      
-      <div className="between-sections">
-        <div className="section-divider" role="separator" aria-hidden="true" />
-      </div>
-
-      {/* Experience Section */}
-      <section className="experience-section slide-in">
-        <div className="section-heading">
-          <h2>Experience</h2>
-          <p>A few of the firms and organizations our members have worked at.</p>
-        </div>
-        <LogoSlider />
-      </section>
-
-      {/* Let's connect section */}
-      <section className="brand-statement">
-        <div className="brand-container">
-          <h2>Keep in Touch</h2>
-        </div>
       </section>
 
     </div>

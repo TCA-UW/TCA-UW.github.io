@@ -1,113 +1,535 @@
+/* Main Container */
 .about-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3% 20px 6rem;
-  max-width: 1000px;
-  margin: auto;
+  background: white;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
 }
 
-.about-image-container {
-  width: 100%;
+/* Hero Section */
+.about-hero {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+  background: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroFadeIn 1s ease forwards;
+}
+
+.about-hero .hero-content {
+  flex: 1;
+  background: white;
+  padding: 0;
+  text-align: left;
+}
+
+.about-title {
+  font-size: 4.5rem !important;
+  font-weight: 700;
+  color: #062031 !important;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: titleSlideIn 0.8s ease 0.3s forwards;
+}
+
+.title-line {
+  width: 100%;
+  height: 3px;
+  background: #216476;
   margin-bottom: 40px;
+  transform: scaleX(0);
+  animation: lineExpand 0.6s ease 0.8s forwards;
+  transform-origin: left;
+}
+
+.hero-description {
+  font-size: 1.4rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 0 !important;
+  text-align: justify;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: descriptionFadeIn 0.8s ease 1.2s forwards;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 600px;
 }
 
 .about-image {
   width: 100%;
-  max-width: 600px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: imageSlideIn 1s ease 0.5s forwards;
 }
 
-.about-title {
+.about-image:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Section Styles */
+.who-we-are {
+  padding: 80px 20px;
+  background: #062031;
+  color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.who-we-are.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.what-we-do {
+  padding: 80px 20px;
+  background: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.what-we-do.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-choose-us {
+  padding: 80px 20px;
+  background: #062031;
+  color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.why-choose-us.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #062031;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease 0.2s;
 }
 
-.about-title::after {
-  content: "";
-  display: block;
-  width: 400px;
-  height: 3px;
-  background-color: #216476;
-  margin: 10px auto 0;
-  border-radius: 2px;
+.who-we-are.animate .section-title,
+.what-we-do.animate .section-title,
+.why-choose-us.animate .section-title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.about-info {
-  font-size: 1.15rem;
-  color: #444;
-  line-height: 1.8;
+.who-we-are .section-title {
+  color: white;
+}
+
+.why-choose-us .section-title {
+  color: white;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 60px;
   text-align: justify;
-  padding: 0 20px;
-  font-style: italic;
-  max-width: 1000px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease 0.4s;
+}
+
+.who-we-are.animate .section-description,
+.what-we-do.animate .section-description,
+.why-choose-us.animate .section-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.who-we-are .section-description {
+  color: #d7e8ec;
+}
+
+.why-choose-us .section-description {
+  color: #d7e8ec;
+}
+
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 40px 30px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.why-choose-us.animate .benefit-item:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease 0.6s;
+}
+
+.why-choose-us.animate .benefit-item:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease 0.8s;
+}
+
+.why-choose-us.animate .benefit-item:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease 1.0s;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background: #216476;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  color: white;
+}
+
+.benefit-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.benefit-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #062031;
+  margin-bottom: 15px;
+}
+
+.benefit-description {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.about-cta {
+  background: white;
+  color: #062031;
+  padding: 80px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.about-cta.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #062031;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-description {
+  font-size: 1.3rem;
+  color: #475569;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 
-body {
-  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-description {
+    text-align: justify;
+    max-width: 100%;
+  }
+  
+  
+  .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-  .about-container {
-    padding: 5% 15px 4rem;
+  .about-hero {
+    padding: 60px 15px 40px;
   }
   
   .about-title {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 3.5rem;
   }
   
-  .about-title::after {
-    width: 70%;
-    max-width: 250px;
+  .hero-description {
+    font-size: 1.2rem;
   }
   
-  .about-image-container {
-    margin-bottom: 30px;
+  .who-we-are,
+  .what-we-do,
+  .why-choose-us {
+    padding: 60px 15px;
   }
   
-  .about-info {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: left;
-    padding: 0 10px;
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+  }
+  
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .benefit-item {
+    padding: 30px 25px;
+  }
+  
+  .about-cta {
+    padding: 60px 15px;
+  }
+  
+  .cta-title {
+    font-size: 2.5rem;
+  }
+  
+  .cta-description {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .about-container {
-    padding: 8% 12px 3rem;
+  .about-hero {
+    padding: 40px 10px 30px;
   }
   
   .about-title {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
+    font-size: 2.8rem;
   }
   
-  .about-title::after {
-    width: 60%;
-    max-width: 200px;
-    height: 2px;
+  .hero-description {
+    font-size: 1.1rem;
   }
   
-  .about-image-container {
-    margin-bottom: 25px;
+  .who-we-are,
+  .what-we-do,
+  .why-choose-us {
+    padding: 40px 10px;
   }
   
-  .about-info {
-    font-size: 0.95rem;
-    padding: 0 5px;
+  .section-title {
+    font-size: 2rem;
   }
+  
+  .section-description {
+    font-size: 1rem;
+  }
+  
+  
+  .benefit-item {
+    padding: 25px 20px;
+  }
+  
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .benefit-title {
+    font-size: 1.2rem;
+  }
+  
+  .benefit-description {
+    font-size: 0.9rem;
+  }
+  
+  .about-cta {
+    padding: 40px 10px;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+  }
+  
+  .cta-description {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes lineExpand {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes descriptionFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes imageSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Enhanced Hover Effects and Micro-interactions */
+.benefit-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.benefit-item:hover .benefit-icon {
+  background: #062031;
+  transform: scale(1.1) rotate(5deg);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover .benefit-title {
+  color: #216476;
+  transition: color 0.3s ease;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #216476;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:hover {
+  background: #1C6F7C;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(33, 100, 118, 0.3);
+}
+
+.section-title:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }

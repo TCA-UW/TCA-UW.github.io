@@ -78,6 +78,13 @@ const Header = () => {
             {(isAboutDropdownOpen || isMobileMenuOpen) && (
               <div className="dropdown-menu">
                 <Link
+                  to="/about/programs"
+                  className={getNavLinkClass("/about/programs")}
+                  onClick={closeMobileMenu}
+                >
+                  Programs
+                </Link>
+                <Link
                   to="/about/subteams"
                   className={getNavLinkClass("/about/subteams")}
                   onClick={closeMobileMenu}

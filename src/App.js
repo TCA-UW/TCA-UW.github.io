@@ -13,6 +13,7 @@ import Services from './components/Services';
 import Subteams from './components/Subteams';
 import Consultants from './components/Consultants';
 import Contact from './components/Contact';
+import Programs from './components/Programs';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about/programs" element={<Programs />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/members" element={<Navigate to="/members/executive-team" replace />} />
             <Route path="/members/executive-team" element={<Members />} />

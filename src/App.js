@@ -14,6 +14,7 @@ import Subteams from './components/Subteams';
 import Consultants from './components/Consultants';
 import Contact from './components/Contact';
 import Programs from './components/Programs';
+import NotFound from './components/404';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about/subteams" element={<Subteams />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <footer className="Footer">

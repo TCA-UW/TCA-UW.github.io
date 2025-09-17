@@ -22,7 +22,9 @@
   flex: 1;
   background: white;
   padding: 0;
-  text-align: left;
+  text-align: left !important;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .join-title {
@@ -30,17 +32,21 @@
   font-weight: 700;
   color: #062031 !important;
   margin-bottom: 20px;
+  text-align: left !important;
 }
 
 .title-line {
-  width: 100%;
+  width: 50%;
   height: 3px;
   background: #216476;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-text {
   max-width: 600px;
+  text-align: left !important;
 }
 
 .hero-description {
@@ -48,7 +54,7 @@
   color: #475569;
   line-height: 1.7;
   margin-bottom: 40px !important;
-  text-align: left;
+  text-align: left !important;
 }
 
 .hero-apply-button {
@@ -62,7 +68,7 @@
   font-size: 1.4rem;
   transition: background-color 0.3s ease;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .hero-apply-button:hover {
@@ -293,17 +299,17 @@
 @media (max-width: 1024px) {
   .join-hero {
     flex-direction: column;
-    text-align: center;
+    text-align: left !important;
     gap: 40px;
   }
   
   .hero-content {
-    text-align: left;
+    text-align: left !important;
   }
   
   .hero-text {
     max-width: 600px;
-    margin: 0 auto;
+    text-align: left !important;
   }
 }
 
@@ -314,6 +320,7 @@
   
   .join-title {
     font-size: 4rem;
+    text-align: left !important;
   }
   
   .hero-description {
@@ -365,6 +372,7 @@
   
   .join-title {
     font-size: 3rem;
+    text-align: left !important;
   }
   
   .hero-description {

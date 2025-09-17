@@ -39,7 +39,7 @@ const Services = () => {
       <div className="services-hero">
         <div className="hero-content">
           <h1 className="services-title">Our Services</h1>
-          <div className="title-line"></div>
+          <div className="title-line-services"></div>
           <p className="hero-description">
             TCA offers a comprehensive range of technology consulting services designed to support businesses 
             in achieving their technology goals. Our expertise spans system design, database management, 

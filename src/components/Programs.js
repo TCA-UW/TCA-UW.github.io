@@ -8,7 +8,7 @@ const Programs = () => {
       <div className="programs-hero">
         <div className="hero-content">
           <h1 className="programs-title">Programs</h1>
-          <div className="title-line"></div>
+          <div className="title-line-programs"></div>
           <p className="hero-description">
             TCA offers two programs designed to support members at different stages of their consulting journey.
           </p>

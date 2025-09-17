@@ -40,8 +40,9 @@
   height: 3px;
   background: #216476;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  display: block !important;
 }
 
 .hero-text {
@@ -310,6 +311,13 @@
   .hero-text {
     max-width: 600px;
     text-align: left !important;
+  }
+  
+  .title-line {
+    margin-bottom: 40px;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    display: block !important;
   }
 }
 

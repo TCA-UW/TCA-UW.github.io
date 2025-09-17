@@ -8,7 +8,7 @@ const NotFound = () => {
       <div className="not-found-content">
         <div className="error-code">404</div>
         <h1 className="error-title">Page Not Found</h1>
-        <div className="title-line"></div>
+        <div className="title-line-404"></div>
         <p className="error-description">
           Sorry, the page you're looking for doesn't exist or has been moved.
         </p>

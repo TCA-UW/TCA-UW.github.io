@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6ae706e2.css",
-    "main.js": "/static/js/main.67f8d758.js",
+    "main.js": "/static/js/main.6d2bf406.js",
     "static/js/453.0120a0e1.chunk.js": "/static/js/453.0120a0e1.chunk.js",
     "static/media/Tristan.png": "/static/media/Tristan.01e0053ebe3d759d1960.png",
     "static/media/Tanishka.png": "/static/media/Tanishka.95da0f10a2c7e305ac65.png",
@@ -30,7 +30,6 @@
     "static/media/Gus.jpg": "/static/media/Gus.d98102d5587c76bf76f4.jpg",
     "static/media/Brianna.jpg": "/static/media/Brianna.ac2de8f75e147cf983ae.jpg",
     "static/media/Ulysses.jpeg": "/static/media/Ulysses.716474de1ed255407918.jpeg",
-    "static/media/Clubphoto.png": "/static/media/Clubphoto.4e06d8c1d9110cb357a5.png",
     "static/media/sumedh.png": "/static/media/sumedh.2aabdef7a440210edbab.png",
     "static/media/akshai.png": "/static/media/akshai.f505816eb3dd233edf0b.png",
     "static/media/Jessica.jpg": "/static/media/Jessica.7d608334baca374b5257.jpg",
@@ -63,11 +62,11 @@
     "static/media/web-programming.png": "/static/media/web-programming.a78f8477023ede203f83.png",
     "index.html": "/index.html",
     "main.6ae706e2.css.map": "/static/css/main.6ae706e2.css.map",
-    "main.67f8d758.js.map": "/static/js/main.67f8d758.js.map",
+    "main.6d2bf406.js.map": "/static/js/main.6d2bf406.js.map",
     "453.0120a0e1.chunk.js.map": "/static/js/453.0120a0e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ae706e2.css",
-    "static/js/main.67f8d758.js"
+    "static/js/main.6d2bf406.js"
   ]
 }

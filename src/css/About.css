@@ -1,3 +1,10 @@
+:root {
+  --navy: #062031;
+  --navy-deep: #041521;
+  --cyan: #00AEEF;
+  --offwhite: #F5F7FA;
+}
+
 /* Main Container */
 .about-container {
   background: white;
@@ -5,6 +12,18 @@
   margin: 0;
   min-height: 100vh;
 }
+
+/* Wave dividers */
+.about-section-divider {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.about-divider-turquoise {
+  height: 100px;
+}
+
 
 /* Hero Section */
 .about-hero {
@@ -82,219 +101,147 @@
 }
 
 
-/* Section Styles */
-.who-we-are {
-  padding: 80px 20px;
-  background: #062031;
+/* For Clients - navy, two columns */
+.about-for-clients {
+  padding: 80px 40px;
+  background: var(--navy);
   color: white;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
 }
 
-.who-we-are.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.what-we-do {
-  padding: 80px 20px;
-  background: white;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
-}
-
-.what-we-do.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.why-choose-us {
-  padding: 80px 20px;
-  background: #062031;
-  color: white;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
-}
-
-.why-choose-us.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.section-content {
+.about-clients-inner {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-clients-text {
+  text-align: left;
+}
+
+.about-clients-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-clients-list li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.15rem;
+  padding: 12px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.about-clients-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+/* For Students - rectangular, image left text right */
+.about-for-students {
+  padding: 80px 40px;
+  background: #f5f7fa;
+}
+
+.about-students-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-students-image {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.about-students-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  max-height: 360px;
+}
+
+.about-students-text {
+  text-align: left;
 }
 
 .section-title {
-  font-size: 3rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #062031;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease 0.2s;
 }
 
-.who-we-are.animate .section-title,
-.what-we-do.animate .section-title,
-.why-choose-us.animate .section-title {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.who-we-are .section-title {
+.about-for-clients .section-title {
   color: white;
 }
 
-.why-choose-us .section-title {
-  color: white;
+.about-for-students .section-title {
+  color: var(--navy);
 }
 
 .section-description {
-  font-size: 1.2rem;
-  color: #475569;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.15rem;
   line-height: 1.7;
-  max-width: 800px;
-  margin: 0 auto 60px;
+  margin-bottom: 28px;
   text-align: justify;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease 0.4s;
 }
 
-.who-we-are.animate .section-description,
-.what-we-do.animate .section-description,
-.why-choose-us.animate .section-description {
-  opacity: 1;
-  transform: translateY(0);
+.about-for-clients .section-description {
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.who-we-are .section-description {
-  color: #d7e8ec;
-}
-
-.why-choose-us .section-description {
-  color: #d7e8ec;
-}
-
-
-/* Benefits Grid */
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
-}
-
-.benefit-item {
-  text-align: center;
-  padding: 40px 30px;
-  background: #f8fafc;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.why-choose-us.animate .benefit-item:nth-child(1) {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease 0.6s;
-}
-
-.why-choose-us.animate .benefit-item:nth-child(2) {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease 0.8s;
-}
-
-.why-choose-us.animate .benefit-item:nth-child(3) {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.6s ease 1.0s;
-}
-
-.benefit-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  background: white;
-}
-
-.benefit-icon {
-  width: 60px;
-  height: 60px;
-  background: #216476;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 25px;
-  color: white;
-}
-
-.benefit-icon svg {
-  width: 28px;
-  height: 28px;
-}
-
-.benefit-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #062031;
-  margin-bottom: 15px;
-}
-
-.benefit-description {
-  font-size: 1rem;
-  color: #64748b;
-  line-height: 1.6;
-}
-
-/* CTA Section */
-.about-cta {
-  background: white;
-  color: #062031;
-  padding: 80px 20px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
-}
-
-.about-cta.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.cta-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.cta-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #062031;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.cta-description {
-  font-size: 1.3rem;
+.about-for-students .section-description {
   color: #475569;
-  line-height: 1.7;
-  margin-bottom: 40px;
 }
 
+/* Section buttons */
+.about-section-btn {
+  display: inline-block;
+  padding: 16px 36px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.about-for-clients .about-section-btn {
+  background: var(--cyan);
+  color: var(--navy-deep);
+}
+
+.about-for-clients .about-section-btn:hover {
+  background: #fff;
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+.about-for-students .about-section-btn {
+  background: var(--cyan);
+  color: var(--navy-deep);
+}
+
+.about-for-students .about-section-btn:hover {
+  background: #fff;
+  color: var(--navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 174, 239, 0.35);
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -312,12 +259,7 @@
     text-align: justify;
     max-width: 100%;
   }
-  
-  
-  .benefits-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -333,10 +275,20 @@
     font-size: 1.2rem;
   }
   
-  .who-we-are,
-  .what-we-do,
-  .why-choose-us {
-    padding: 60px 15px;
+  .about-for-students,
+  .about-for-clients {
+    padding: 60px 20px;
+  }
+
+  .about-clients-inner,
+  .about-students-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-clients-text,
+  .about-students-text {
+    text-align: center;
   }
   
   .section-title {
@@ -348,26 +300,6 @@
   }
   
   
-  .benefits-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  
-  .benefit-item {
-    padding: 30px 25px;
-  }
-  
-  .about-cta {
-    padding: 60px 15px;
-  }
-  
-  .cta-title {
-    font-size: 2.5rem;
-  }
-  
-  .cta-description {
-    font-size: 1.1rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -383,10 +315,9 @@
     font-size: 1.1rem;
   }
   
-  .who-we-are,
-  .what-we-do,
-  .why-choose-us {
-    padding: 40px 10px;
+  .about-for-students,
+  .about-for-clients {
+    padding: 40px 16px;
   }
   
   .section-title {
@@ -398,45 +329,6 @@
   }
   
   
-  .benefit-item {
-    padding: 25px 20px;
-  }
-  
-  .benefit-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .benefit-icon svg {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .benefit-title {
-    font-size: 1.2rem;
-  }
-  
-  .benefit-description {
-    font-size: 0.9rem;
-  }
-  
-  .about-cta {
-    padding: 40px 10px;
-  }
-  
-  .cta-title {
-    font-size: 2rem;
-  }
-  
-  .cta-description {
-    font-size: 1rem;
-  }
-  
-  .cta-button {
-    font-size: 1rem;
-    padding: 12px 30px;
-  }
 }
 
 /* Keyframe Animations */
@@ -472,64 +364,4 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-/* Enhanced Hover Effects and Micro-interactions */
-.benefit-item:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-  background: white;
-}
-
-.benefit-item:hover .benefit-icon {
-  background: #062031;
-  transform: scale(1.1) rotate(5deg);
-  transition: all 0.3s ease;
-}
-
-.benefit-item:hover .benefit-title {
-  color: #216476;
-  transition: color 0.3s ease;
-}
-
-.cta-button {
-  display: inline-block;
-  background: #216476;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.cta-button:hover::before {
-  left: 100%;
-}
-
-.cta-button:hover {
-  background: #1C6F7C;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(33, 100, 118, 0.3);
-}
-
-.section-title:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
 }

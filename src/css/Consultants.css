@@ -6,6 +6,54 @@
     padding: 3% 20px 4rem;
     background: #f8f9fa;
   }
+
+  /* Executive Subteams title + line (matches Executive Team page) */
+  .exec-subteams-header-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .exec-subteams-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 700;
+    color: #062031;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .exec-subteams-title-line {
+    width: min(85%, 420px);
+    height: 3px;
+    background: #00AEEF;
+    margin: 0 auto 22px;
+  }
+
+  /* Consultants page title + line (matches Executive Team page) */
+  .consultants-header-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  .consultants-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 700;
+    color: #062031;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .consultants-title-line {
+    width: min(85%, 420px);
+    height: 3px;
+    background: #00AEEF;
+    margin: 0 auto 32px;
+  }
   
   .levelOrganizationConsultants h1 {
     font-size: 3rem;
@@ -27,6 +75,24 @@
     border-radius: 2px;
     margin-bottom: 20%
   }
+
+  .consultants-cohort {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 4rem;
+  }
+
+  .consultants-cohort-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #062031;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #00AEEF;
+  }
   
   .levelOrganizationConsultants h3 {
     font-size: 2rem;
@@ -34,7 +100,7 @@
     color: #062031;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: -15%
+    margin-bottom: 1rem;
   }
   
   .consultants-grid {
@@ -43,9 +109,13 @@
     gap: 4rem;
     max-width: 1200px;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 1rem;
     margin-bottom: 5%;
     justify-items: center;
+  }
+
+  .consultants-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .consultant-card {
@@ -54,13 +124,16 @@
   
   .consultant-image {
     width: auto;
-    height: 450px;
-    max-width: 300px;
+    height: 400px;
+    max-width: 270px;
     object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
- }
+    display: block;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
   
   .consultant-image:hover {
     transform: scale(1.05);
@@ -69,7 +142,7 @@
   .consultant-name {
     color: #062031;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin: 0 0 0.75rem 0;
     font-weight: bold;
   }
   
@@ -77,14 +150,23 @@
     color: #000000;
     font-size: 1.1rem;
     font-style: italic;
-    margin-top: 0.5rem;
-    margin-bottom: 5%;
+    margin: 0 0 1rem 0;
+  }
+
+  @media (max-width: 1200px) {
+    .consultants-grid-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   @media (max-width: 900px) {
     .consultants-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
+    }
+
+    .consultants-grid-4 {
+      grid-template-columns: repeat(2, 1fr);
     }
   
     .levelOrganizationConsultants h1 {
@@ -137,6 +219,10 @@
       grid-template-columns: 1fr;
       gap: 2rem;
     }
+
+    .consultants-grid-4 {
+      grid-template-columns: 1fr;
+    }
   
     .levelOrganizationConsultants h1 {
       font-size: 2rem;
@@ -152,11 +238,15 @@
       text-align: center;
       margin-bottom: 30px;
     }
-  
+  }
   
   @media (max-width: 480px) {
     .consultants-container {
       padding: 8% 12px 2rem;
+    }
+
+    .consultants-title {
+      font-size: 2.5rem;
     }
   
     .levelOrganizationConsultants h1 {
@@ -189,4 +279,4 @@
       margin-top: 7%;
       margin-bottom: 7%;
     }
-  }}
+  }

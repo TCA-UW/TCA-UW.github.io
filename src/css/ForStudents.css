@@ -1,0 +1,767 @@
+:root {
+  --navy: #062031;
+  --navy-deep: #041521;
+  --cyan: #00AEEF;
+  --offwhite: #F5F7FA;
+}
+
+@keyframes fs-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fs-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.for-students-container {
+  background: white;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Hero */
+.for-students-hero {
+  padding: 80px 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.for-students-hero .for-students-title,
+.for-students-hero .for-students-title-line,
+.for-students-hero .for-students-hero-desc {
+  opacity: 0;
+}
+
+.for-students-hero.fs-in-view .for-students-title,
+.for-students-hero.fs-in-view .for-students-title-line,
+.for-students-hero.fs-in-view .for-students-hero-desc {
+  animation: fs-fade-up 0.6s ease-out forwards;
+}
+
+.for-students-hero.fs-in-view .for-students-title { animation-delay: 0s; }
+.for-students-hero.fs-in-view .for-students-title-line { animation-delay: 0.1s; }
+.for-students-hero.fs-in-view .for-students-hero-desc { animation-delay: 0.2s; }
+
+.for-students-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.for-students-title-line {
+  width: min(85%, 420px);
+  height: 3px;
+  background: var(--cyan);
+  margin: 0 auto 32px;
+}
+
+.for-students-hero-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Divider */
+.for-students-divider {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+/* Programs Section - Full-width alternating sections */
+.for-students-programs {
+  padding: 0;
+  background: white;
+  color: var(--navy);
+}
+
+.for-students-section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  text-align: center;
+}
+
+.for-students-programs .for-students-section-title,
+.for-students-programs .for-students-section-desc {
+  opacity: 0;
+}
+
+.for-students-programs.fs-in-view .for-students-section-title,
+.for-students-programs.fs-in-view .for-students-section-desc {
+  animation: fs-fade-in 0.5s ease-out 0.3s forwards;
+}
+
+.for-students-programs .for-students-section-title {
+  color: var(--navy);
+}
+
+.for-students-programs .for-students-section-desc {
+  color: #475569;
+}
+
+.for-students-section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.for-students-section-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+/* Full-width program sections - UWCA style */
+.for-students-program-section {
+  width: 100%;
+  padding: 100px 0;
+  opacity: 0;
+}
+
+.for-students-program-section.fs-in-view {
+  animation: fs-fade-up 0.6s ease-out forwards;
+}
+
+.for-students-program-section-navy {
+  background: var(--navy);
+  color: white;
+}
+
+.for-students-program-section-white {
+  background: white;
+  color: var(--navy);
+}
+
+.for-students-program-section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.for-students-program-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image wrapper - not full height */
+.for-students-program-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Slightly smaller images for specific program sections for consistency */
+.for-students-programs .for-students-program-section:first-of-type .for-students-program-image-wrapper {
+  max-width: 450px; /* Sandbox */
+}
+
+.for-students-programs .for-students-program-section:nth-of-type(3) .for-students-program-image-wrapper {
+  max-width: 480px; /* Career Events (Accenture image) */
+}
+
+.for-students-programs .for-students-program-section:nth-of-type(4) .for-students-program-image-wrapper {
+  max-width: 440px; /* Social Events image */
+}
+
+.for-students-program-section-white .for-students-program-image-wrapper {
+  box-shadow: 0 8px 32px rgba(6, 32, 49, 0.15);
+}
+
+.for-students-program-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.for-students-program-caption {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 16px;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.for-students-program-section-white .for-students-program-caption {
+  color: #000000;
+}
+
+/* Content wrapper */
+.for-students-program-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.for-students-program-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--cyan);
+}
+
+.for-students-program-section-navy .for-students-program-title {
+  color: white;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  font-family: 'Outfit', sans-serif;
+}
+
+.for-students-program-section-white .for-students-program-title {
+  color: var(--navy);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  font-family: 'Outfit', sans-serif;
+}
+
+.for-students-program-section-navy .for-students-program-subtitle {
+  color: var(--cyan);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+}
+
+.for-students-program-section-white .for-students-program-subtitle {
+  color: var(--cyan);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+}
+
+.for-students-program-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.for-students-program-section-navy .for-students-program-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.for-students-program-section-white .for-students-program-description {
+  color: #475569;
+}
+
+.for-students-program-bullets {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  list-style: disc;
+}
+
+.for-students-program-section-navy .for-students-program-bullets {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.for-students-program-section-white .for-students-program-bullets {
+  color: #475569;
+}
+
+.for-students-program-bullets li {
+  margin-bottom: 14px;
+}
+
+.for-students-program-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Subteams Section - navy, outside the wave */
+.for-students-subteams {
+  padding: 55px 40px 5px;
+  margin-top: -80px;
+  background: var(--navy);
+  color: white;
+}
+
+.for-students-subteams .for-students-section-title-dark {
+  color: white;
+}
+
+.for-students-subteams .for-students-section-desc-dark {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.for-students-subteams .for-students-section-title,
+.for-students-subteams .for-students-section-desc {
+  opacity: 0;
+}
+
+.for-students-subteams.fs-in-view .for-students-section-title,
+.for-students-subteams.fs-in-view .for-students-section-desc {
+  animation: fs-fade-in 0.5s ease-out 0.3s forwards;
+}
+
+.for-students-subteams-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.for-students-subteam-card {
+  padding: 36px 28px;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.for-students-subteams.fs-in-view .for-students-subteam-card {
+  animation: fs-fade-up 0.5s ease-out forwards;
+}
+
+.for-students-subteams.fs-in-view .for-students-subteam-card:nth-child(1) { animation-delay: 0.4s; }
+.for-students-subteams.fs-in-view .for-students-subteam-card:nth-child(2) { animation-delay: 0.5s; }
+.for-students-subteams.fs-in-view .for-students-subteam-card:nth-child(3) { animation-delay: 0.6s; }
+
+.for-students-subteam-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--cyan);
+}
+
+.for-students-subteam-card:hover {
+  transform: translateY(-6px);
+  border-color: #216476;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.for-students-subteam-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--cyan);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.for-students-subteam-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.for-students-subteam-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.for-students-subteam-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.for-students-role-tag {
+  display: inline-block;
+  background: var(--cyan);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.for-students-subteams-note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+/* Quarter Highlights - navy section in the wave below subteams */
+.for-students-highlights {
+  padding: 64px 40px 60px;
+  background: white;
+  color: var(--navy);
+}
+
+.for-students-highlights-inner {
+  padding-top: 0;
+}
+
+.for-students-highlights-title {
+  color: var(--navy);
+}
+
+.for-students-highlights-desc {
+  color: #475569;
+}
+
+.for-students-highlights .for-students-section-title,
+.for-students-highlights .for-students-section-desc {
+  opacity: 0;
+}
+
+.for-students-highlights.fs-in-view .for-students-highlights-title,
+.for-students-highlights.fs-in-view .for-students-highlights-desc {
+  animation: fs-fade-in 0.5s ease-out 0.3s forwards;
+}
+
+.for-students-highlights .for-students-carousel {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.for-students-highlights.fs-in-view .for-students-carousel {
+  animation: fs-fade-up 0.6s ease-out 0.5s forwards;
+}
+
+.for-students-highlights .for-students-carousel-dots {
+  opacity: 0;
+}
+
+.for-students-highlights.fs-in-view .for-students-carousel-dots {
+  animation: fs-fade-in 0.5s ease-out 0.9s forwards;
+}
+
+.for-students-highlights .for-students-carousel-frame {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
+}
+
+.for-students-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto 24px;
+}
+
+.for-students-carousel-btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cyan);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+  padding: 0;
+}
+
+.for-students-carousel-btn:hover {
+  color: var(--navy);
+  background: var(--cyan);
+  transform: scale(1.08);
+}
+
+.for-students-carousel-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.for-students-carousel-frame {
+  flex: 1;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 4/3;
+  max-height: 520px;
+}
+
+
+.for-students-carousel-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.for-students-carousel-slide.active {
+  display: block;
+  animation: fs-fade-in 0.4s ease-out;
+}
+
+.for-students-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.for-students-carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 16px 14px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Cute dots */
+.for-students-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.for-students-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  border: 1px solid #94a3b8;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  padding: 0;
+}
+
+.for-students-dot:hover {
+  background: #cbd5f5;
+}
+
+.for-students-dot.active {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  transform: scale(1.2);
+}
+
+.for-students-cta {
+  text-align: center;
+}
+
+.for-students-cta-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  background: var(--cyan);
+  color: var(--navy);
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.for-students-cta-btn:hover {
+  background: #00c4ff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .for-students-program-section-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 0 40px;
+  }
+
+  .for-students-program-image-wrapper {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .for-students-program-content-wrapper {
+    order: 2;
+    text-align: center;
+  }
+
+  .for-students-program-section-navy .for-students-program-content-wrapper {
+    text-align: left;
+  }
+
+  .for-students-subteams-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .for-students-hero {
+    padding: 60px 20px 40px;
+  }
+
+  .for-students-hero-desc {
+    font-size: 1.1rem;
+  }
+
+  .for-students-section-inner {
+    padding: 60px 20px 40px;
+  }
+
+  .for-students-program-section {
+    padding: 60px 0;
+  }
+
+  .for-students-program-section-container {
+    padding: 0 30px;
+    gap: 40px;
+  }
+
+  .for-students-program-title {
+    font-size: 2rem;
+  }
+
+  .for-students-program-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .for-students-program-description {
+    font-size: 1rem;
+  }
+
+  .for-students-subteams,
+  .for-students-highlights {
+    padding: 60px 20px;
+  }
+
+  .for-students-carousel {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .for-students-carousel-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .for-students-carousel-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .for-students-carousel-frame {
+    aspect-ratio: 4/3;
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .for-students-hero {
+    padding: 40px 16px 32px;
+  }
+
+  .for-students-title {
+    font-size: 2.5rem;
+  }
+
+  .for-students-section-inner {
+    padding: 50px 16px 30px;
+  }
+
+  .for-students-program-section {
+    padding: 50px 0;
+  }
+
+  .for-students-program-section-container {
+    padding: 0 20px;
+    gap: 32px;
+  }
+
+  .for-students-program-title {
+    font-size: 1.8rem;
+  }
+
+  .for-students-program-subtitle {
+    font-size: 1rem;
+  }
+
+  .for-students-program-description {
+    font-size: 0.95rem;
+  }
+
+  .for-students-program-bullets {
+    font-size: 0.95rem;
+  }
+
+  .for-students-subteams,
+  .for-students-highlights {
+    padding: 40px 16px;
+  }
+
+  .for-students-subteam-card {
+    padding: 28px 22px;
+  }
+
+  .for-students-carousel-frame {
+    max-height: 320px;
+  }
+}

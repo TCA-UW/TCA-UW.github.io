@@ -5,8 +5,9 @@ import TCALogo from '../assets/TCALogo.png';
 
 const Header = () => {
   const location = useLocation();
-  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isMembersDropdownOpen, setIsMembersDropdownOpen] = useState(false);
+  const [isForClientsDropdownOpen, setIsForClientsDropdownOpen] = useState(false);
+  const [isForStudentsDropdownOpen, setIsForStudentsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hidden, setHidden] = useState(false);     
   const [compact, setCompact] = useState(false);
@@ -61,39 +62,7 @@ const Header = () => {
         
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-nav-open' : ''}`}>
           <Link to="/" className={getNavLinkClass("/")} onClick={closeMobileMenu}>Home</Link>
-          
-          <div
-            className="dropdown"
-            onMouseEnter={() => setIsAboutDropdownOpen(true)}
-            onMouseLeave={() => setIsAboutDropdownOpen(false)}
-          >
-            <Link
-              to="/about"
-              className={`${getNavLinkClass("/about")} dropdown-toggle`}
-              onClick={closeMobileMenu}
-            >
-              About
-              <span className="dropdown-caret">▼</span>
-            </Link>
-            {(isAboutDropdownOpen || isMobileMenuOpen) && (
-              <div className="dropdown-menu">
-                <Link
-                  to="/about/programs"
-                  className={getNavLinkClass("/about/programs")}
-                  onClick={closeMobileMenu}
-                >
-                  Programs
-                </Link>
-                <Link
-                  to="/about/subteams"
-                  className={getNavLinkClass("/about/subteams")}
-                  onClick={closeMobileMenu}
-                >
-                  Subteams
-                </Link>
-              </div>
-            )}
-          </div>
+          <Link to="/about" className={getNavLinkClass("/about")} onClick={closeMobileMenu}>About</Link>
           
           <div
             className="dropdown"
@@ -134,8 +103,80 @@ const Header = () => {
               </div>
             )}
           </div>
+
+          <div
+            className="dropdown"
+            onMouseEnter={() => setIsForClientsDropdownOpen(true)}
+            onMouseLeave={() => setIsForClientsDropdownOpen(false)}
+          >
+            <Link
+              to="/for-clients"
+              className={`${getNavLinkClass("/for-clients")} dropdown-toggle`}
+              onClick={closeMobileMenu}
+            >
+              For Clients
+              <span className="dropdown-caret">▼</span>
+            </Link>
+            {(isForClientsDropdownOpen || isMobileMenuOpen) && (
+              <div className="dropdown-menu">
+                <Link
+                  to="/for-clients#services"
+                  className={location.pathname === "/for-clients" && location.hash === "#services" ? "active-nav" : "nav-link"}
+                  onClick={closeMobileMenu}
+                >
+                  Services
+                </Link>
+                <Link
+                  to="/for-clients#timeline"
+                  className={location.pathname === "/for-clients" && location.hash === "#timeline" ? "active-nav" : "nav-link"}
+                  onClick={closeMobileMenu}
+                >
+                  Timeline
+                </Link>
+                <Link
+                  to="/for-clients#clients"
+                  className={location.pathname === "/for-clients" && location.hash === "#clients" ? "active-nav" : "nav-link"}
+                  onClick={closeMobileMenu}
+                >
+                  Past Clients
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <div
+            className="dropdown"
+            onMouseEnter={() => setIsForStudentsDropdownOpen(true)}
+            onMouseLeave={() => setIsForStudentsDropdownOpen(false)}
+          >
+            <Link
+              to="/for-students"
+              className={`${getNavLinkClass("/for-students")} dropdown-toggle`}
+              onClick={closeMobileMenu}
+            >
+              For Students
+              <span className="dropdown-caret">▼</span>
+            </Link>
+            {(isForStudentsDropdownOpen || isMobileMenuOpen) && (
+              <div className="dropdown-menu">
+                <Link
+                  to="/for-students#programs"
+                  className={location.pathname === "/for-students" && location.hash === "#programs" ? "active-nav" : "nav-link"}
+                  onClick={closeMobileMenu}
+                >
+                  Programs
+                </Link>
+                <Link
+                  to="/for-students#subteams"
+                  className={location.pathname === "/for-students" && location.hash === "#subteams" ? "active-nav" : "nav-link"}
+                  onClick={closeMobileMenu}
+                >
+                  Subteams
+                </Link>
+              </div>
+            )}
+          </div>
           
-          <Link to="/services" className={getNavLinkClass("/services")} onClick={closeMobileMenu}>Services</Link>
           <Link to="/join" className={getNavLinkClass("/join")} onClick={closeMobileMenu}>Join</Link>
           <Link to="/faq" className={getNavLinkClass("/faq")} onClick={closeMobileMenu}>FAQ</Link>
           <Link to="/contact" className={getNavLinkClass("/contact")} onClick={closeMobileMenu}>Contact</Link>

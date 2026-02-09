@@ -17,7 +17,7 @@
 .error-code {
   font-size: 8rem;
   font-weight: 900;
-  color: #216476;
+  color: var(--cyan, #00AEEF);
   margin-bottom: 20px;
   line-height: 1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@
 .title-line-404 {
   width: 50%;
   height: 3px;
-  background: #216476;
+  background: var(--cyan, #00AEEF);
   margin: 0 auto 40px;
 }
 
@@ -70,9 +70,9 @@
 }
 
 .home-button {
-  background: #216476;
+  background: var(--cyan, #00AEEF);
   color: white;
-  border: 2px solid #216476;
+  border: 2px solid var(--cyan, #00AEEF);
 }
 
 .home-button:hover {
@@ -83,12 +83,12 @@
 
 .contact-button {
   background: transparent;
-  color: #216476;
-  border: 2px solid #216476;
+  color: var(--cyan, #00AEEF);
+  border: 2px solid var(--cyan, #00AEEF);
 }
 
 .contact-button:hover {
-  background: #216476;
+  background: var(--cyan, #00AEEF);
   color: white;
   transform: translateY(-2px);
 }

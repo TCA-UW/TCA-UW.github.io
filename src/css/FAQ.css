@@ -1,7 +1,13 @@
 .faq-container {
-  background: white;
-  padding: 4rem 0 6rem;
+  background: #ffffff;
+  padding: 4rem 0 0;
   min-height: 100vh;
+}
+
+.faq-section {
+  background: var(--navy, #062031);
+  padding: 4rem 0 6rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.4);
 }
 
 .faq-header {
@@ -28,12 +34,12 @@
 }
 
 .faq-card {
-  background: #1e4a5a;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   transition: all 0.3s ease;
   overflow: hidden;
-  border: 1px solid #2a5f6f;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .faq-card:hover {
@@ -42,8 +48,8 @@
 }
 
 .faq-card.active {
-  box-shadow: 0 8px 30px rgba(33, 100, 118, 0.15);
-  border-color: #216476;
+  box-shadow: 0 8px 30px rgba(6, 32, 49, 0.4);
+  border-color: var(--cyan, #00AEEF);
 }
 
 .faq-card-header {
@@ -53,17 +59,17 @@
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
-  background: #1e4a5a;
+  background: transparent;
 }
 
 .faq-card-header:hover {
-  background: #2a5f6f;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .faq-question {
   font-size: 1.2rem;
   font-weight: 600;
-  color: white;
+  color: rgba(255, 255, 255, 0.88);
   margin: 0;
   flex: 1;
   line-height: 1.4;
@@ -76,12 +82,12 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.18);
   transition: all 0.3s ease;
 }
 
 .faq-card.active .faq-toggle {
-  background: #216476;
+  background: var(--cyan, #00AEEF);
 }
 
 .toggle-icon {
@@ -100,7 +106,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  background: rgba(255, 255, 255, 0.1);
+  background: transparent;
 }
 
 .faq-card-content.expanded {
@@ -112,11 +118,11 @@
   margin: 0;
   font-size: 1rem;
   line-height: 1.6;
-  color: #d7e8ec;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .faq-title {
-  font-size: 3.2rem !important;
+  font-size: 3.6rem !important;
   font-weight: 700;
   color: #062031 !important;
   margin-bottom: 20px;
@@ -131,7 +137,7 @@
   display: block;
   width: 50%;
   height: 4px;
-  background: #216476;
+  background: var(--cyan, #00AEEF);
   margin: 30px auto 40px;
 }
 

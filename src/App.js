@@ -9,11 +9,10 @@ import Home from './components/Home';
 import About from './components/About';
 import Join from './components/Join';
 import Footer from './components/Footer';
-import Services from './components/Services';
-import Subteams from './components/Subteams';
 import Consultants from './components/Consultants';
 import Contact from './components/Contact';
-import Programs from './components/Programs';
+import ForClients from './components/ForClients';
+import ForStudents from './components/ForStudents';
 import NotFound from './components/404';
 
 function App() {
@@ -27,16 +26,18 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/about/programs" element={<Programs />} />
+            <Route path="/about/programs" element={<Navigate to="/for-students#programs" replace />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/members" element={<Navigate to="/members/executive-team" replace />} />
             <Route path="/members/executive-team" element={<Members />} />
             <Route path="/members/exec-subteams" element={<SubExec />} />
             <Route path="/members/consultants" element={<Consultants />} />
             <Route path="/join" element={<Join />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about/subteams" element={<Subteams />} />
+            <Route path="/services" element={<Navigate to="/for-clients#services" replace />} />
+            <Route path="/about/subteams" element={<Navigate to="/for-students#subteams" replace />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/for-clients" element={<ForClients />} />
+            <Route path="/for-students" element={<ForStudents />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

@@ -46,25 +46,28 @@ const FAQ = () => {
   return (
     <div className="faq-container">
       <div className="faq-header">
-      <h1 className="faq-title">Frequently Asked Questions</h1>
+        <h1 className="faq-title">Frequently Asked Questions</h1>
         <p className="faq-subtitle">Everything you need to know about TCA</p>
       </div>
-      <div className="faq-grid">
-        {faqData.map((item, index) => (
-          <div className={`faq-card ${activeIndex === index ? 'active' : ''}`} key={index}>
-            <div className="faq-card-header" onClick={() => handleToggle(index)}>
-              <h3 className="faq-question">{item.question}</h3>
-              <div className="faq-toggle">
-                <span className={`toggle-icon ${activeIndex === index ? 'active' : ''}`}>
-                  {activeIndex === index ? '−' : '+'}
-                </span>
+      
+      <div className="faq-section">
+        <div className="faq-grid">
+          {faqData.map((item, index) => (
+            <div className={`faq-card ${activeIndex === index ? 'active' : ''}`} key={index}>
+              <div className="faq-card-header" onClick={() => handleToggle(index)}>
+                <h3 className="faq-question">{item.question}</h3>
+                <div className="faq-toggle">
+                  <span className={`toggle-icon ${activeIndex === index ? 'active' : ''}`}>
+                    {activeIndex === index ? '−' : '+'}
+                  </span>
+                </div>
+              </div>
+              <div className={`faq-card-content ${activeIndex === index ? 'expanded' : ''}`}>
+                <p className="faq-answer">{item.answer}</p>
               </div>
             </div>
-            <div className={`faq-card-content ${activeIndex === index ? 'expanded' : ''}`}>
-              <p className="faq-answer">{item.answer}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

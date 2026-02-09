@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/About.css";
 import AboutImage from "../assets/GroupPic1.jpg";
-import JoinImage from "../assets/Join1.jpg";
+import JoinImage from "../assets/GroupPic2.png";
 
 const About = () => {
   const clientServices = [

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Home.css';
 import LogoSlider from './LogoSlider';
 import CountUp from "./CountUp";
@@ -38,8 +39,8 @@ const Home = () => {
             AI-driven expertise meets real-world impact
           </p>
           <div className="hero-cta">
-            <a href="/for-clients#services" className="btn-primary">Clients</a>
-            <a href="/for-students" className="btn-outline">Students</a>
+            <Link to="/for-clients" className="btn-primary">Clients</Link>
+            <Link to="/for-students" className="btn-outline">Students</Link>
           </div>
         </div>
         <div className="scroll-hint">

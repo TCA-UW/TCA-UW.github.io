@@ -1,16 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../css/ForStudents.css";
-import SubteamsImage from "../assets/Subteam1.jpg";
-import groupPic from "../assets/GroupPic1.jpg";
-import joinPic from "../assets/Join1.jpg";
-import clubPic from "../assets/Clubphoto.png";
-import teamPic from "../assets/Team30.png";
-import seattlePic from "../assets/Seattle.jpeg";
-// Program images - replace these with actual program photos
-import sandboxImage from "../assets/Join1.jpg";
 import engagementsImage from "../assets/Subteam1.jpg";
-import careerEventsImage from "../assets/GroupPic1.jpg";
 import Sandbox from "../assets/other/Sandbox.jpg";
 import Accenture1 from "../assets/other/accenture1.jpg";
 import Social from "../assets/other/Social.jpg";

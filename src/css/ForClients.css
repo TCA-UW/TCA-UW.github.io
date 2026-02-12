@@ -548,11 +548,26 @@
   }
 
   .for-clients-clients-row {
-    gap: 40px 56px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .for-clients-client {
+    max-width: 340px;
+    width: 100%;
   }
 
   .for-clients-client-logo {
     height: 130px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .for-clients-client-name {
+    white-space: normal;
+    margin-top: 4px;
   }
 
   .for-clients-client img {
@@ -626,12 +641,21 @@
   }
 
   .for-clients-clients-row {
-    flex-wrap: wrap;
-    gap: 32px 40px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 32px;
   }
 
   .for-clients-client-logo {
     height: 110px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .for-clients-client-name {
+    white-space: normal;
+    margin-top: 4px;
   }
 
   .for-clients-client img {

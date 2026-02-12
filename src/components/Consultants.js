@@ -71,6 +71,7 @@ const cohorts = [
 ];
 
 const Consultants = () => {
+  let imageIndex = 0;
   return (
     <div className="consultants-container">
       <div className="consultants-header-section">
@@ -88,15 +89,27 @@ const Consultants = () => {
           <div key={cohort.name} className="consultants-cohort">
             <h2 className="consultants-cohort-title">{cohort.name}</h2>
             <div className="consultants-grid consultants-grid-4">
-              {consultants.map((consultant) => (
-                <div className="consultant-card" key={`${cohort.name}-${consultant.name}`}>
-                  <p className="consultant-name">{consultant.name}</p>
-                  <a href={consultant.linkedin} target="_blank" rel="noopener noreferrer">
-                    <img src={consultant.image} className="consultant-image" alt={consultant.name} />
-                  </a>
-                  <p className="consultant-major">{consultant.major}</p>
-                </div>
-              ))}
+              {consultants.map((consultant) => {
+                const idx = imageIndex++;
+                return (
+                  <div className="consultant-card" key={`${cohort.name}-${consultant.name}`}>
+                    <p className="consultant-name">{consultant.name}</p>
+                    <a href={consultant.linkedin} target="_blank" rel="noopener noreferrer">
+                      <img
+                        src={consultant.image}
+                        className="consultant-image"
+                        alt={consultant.name}
+                        width={300}
+                        height={400}
+                        loading="lazy"
+                        decoding="async"
+                        fetchPriority={idx < 4 ? "high" : "low"}
+                      />
+                    </a>
+                    <p className="consultant-major">{consultant.major}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         );

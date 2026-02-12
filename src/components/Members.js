@@ -93,7 +93,7 @@ const Members = () => {
       </div>
 
       <div className="members-grid">
-        {members.map((member) => (
+        {members.map((member, index) => (
           <div className="member-card" key={member.name}>
             <h6 className="member-position">{member.position}</h6>
             <a
@@ -107,11 +107,11 @@ const Members = () => {
                   src={member.image}
                   className="member-image"
                   alt={`${member.name} headshot`}
-                  width="300"
-                  height="400"
+                  width={300}
+                  height={400}
                   loading="lazy"
                   decoding="async"
-                  fetchpriority="low"
+                  fetchPriority={index < 4 ? "high" : "low"}
                 />
               </div>
             </a>

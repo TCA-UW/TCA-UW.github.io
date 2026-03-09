@@ -6,10 +6,10 @@ import JoinImage from "../assets/GroupPic2.png";
 
 const About = () => {
   const clientServices = [
-    "System Design",
-    "Cloud Solutions",
-    "Data Analysis",
-    "Database Management",
+    "Computer Vision",
+    "RAG Pipelines",
+    "AI Integration",
+    "LLM-Finetuning",
   ];
 
   return (
@@ -20,8 +20,8 @@ const About = () => {
           <h1 className="about-title">About TCA</h1>
           <div className="title-line"></div>
           <p className="hero-description">
-            The University of Washington's premier student-run technology consultancy. 
-            We bridge the gap between innovative technology solutions and real-world business challenges.
+            TCA is the University of Washington's premier student-run technology consultancy. We specialize in applied ML solutions, bridging
+            the gap between innovative technology and the real-world business challenges of tomorrow.
           </p>
         </div>
         <div className="hero-image">
@@ -41,8 +41,7 @@ const About = () => {
           <div className="about-clients-text">
             <h2 className="section-title">For Clients</h2>
             <p className="section-description">
-              Work with UW's top students on technology consulting projects. We deliver AI-driven solutions 
-              and strategic insights for startups, nonprofits, and established businesses—at no cost to you.
+              Looking to build with AI? We deliver applied ML solutions including LLM pipelines, RAG systems, and computer vision, built by top UW engineers.
             </p>
             <Link to="/for-clients" className="about-section-btn">Clients</Link>
           </div>
@@ -65,8 +64,8 @@ const About = () => {
           <div className="about-students-text">
             <h2 className="section-title">For Students</h2>
             <p className="section-description">
-              TCA runs workshops, case practice sessions, and info events throughout the year. 
-              Join Sandbox to build consulting fundamentals, or take on real client projects through Engagements. 
+              TCA runs workshops, case competitions, and industry panels throughout the year. 
+              Join our Sandbox Program to build consulting fundamentals, or take on real client projects through an engagement. 
               You'll grow your skills, expand your network, and gain experience that stands out on a resume.
             </p>
             <Link to="/for-students" className="about-section-btn">Students</Link>

@@ -38,18 +38,20 @@ const Join = () => {
           <div className="title-line"></div>
           <div className="hero-text">
             <p className="hero-description">
-              Thank you for your interest in TCA. We are not currently accepting applications. Applications for our <strong>Spring 2026 cohort</strong> will open towards the <strong>end of March 2026</strong>. Please check back here or follow our socials for the latest updates.
+              Applications are now open for our Spring 2026 cohort and are due on Friday, 4/3, at 11:59 PM!
+              <br />
+              <br />
+              No prior machine learning experience is necessary to apply! We primarily look for members with a strong interest in technology, so beginners and students across all majors
+              are encouraged to apply!
             </p>
-            {/* Application button (temporarily disabled while applications are closed)
             <a
-              href="https://forms.gle/pfrn4xvEPKcZk7rm6"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfnyOF8BopySp78Y0f7k-r8sGhQf6bjVWackL660hBgfHsW8A/viewform"
               className="hero-apply-button"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Apply Now
+              Apply
             </a>
-            */}
           </div>
         </div>
         <div className="hero-image">
@@ -166,7 +168,7 @@ const Join = () => {
             <div className="timeline-content">
               <h3>Optional Coffee Chats</h3>
               <p>
-                Before applications open, we host informal coffee chats with current members for students who want to learn more about TCA.
+                The week of March 30th, TCA will host informal coffee chats for students who want to learn more about our RSO. More information will be posted shortly!
               </p>
               <div className="hover-description">
                 Coffee chats are completely optional and do not affect your application. They&apos;re a relaxed way to ask questions

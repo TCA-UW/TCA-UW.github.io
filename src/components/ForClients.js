@@ -107,6 +107,15 @@ const ForClients = () => {
 
   const serviceSections = [
     {
+      name: "ML",
+      skills: [
+        { icon: <CpuIcon />, name: "Machine Learning", desc: "Models, training, deployment" },
+        { icon: <SparklesIcon />, name: "AI & LLMs", desc: "LLM integration, RAG, agents" },
+        { icon: <TrendingIcon />, name: "Predictive Analytics", desc: "Forecasting, recommendations" },
+        { icon: <EyeIcon />, name: "Computer Vision", desc: "Image recognition, NLP" },
+      ],
+    },
+    {
       name: "Tech",
       skills: [
         { icon: codeIcon, name: "System Design", desc: "Scalable systems, microservices, APIs" },
@@ -123,16 +132,7 @@ const ForClients = () => {
         { icon: <UsersIcon />, name: "Stakeholder Analysis", desc: "Requirements, workshops" },
         { icon: <FileTextIcon />, name: "Reporting", desc: "Metrics, KPIs, presentations" },
       ],
-    },
-    {
-      name: "ML",
-      skills: [
-        { icon: <CpuIcon />, name: "Machine Learning", desc: "Models, training, deployment" },
-        { icon: <SparklesIcon />, name: "AI & LLMs", desc: "LLM integration, RAG, agents" },
-        { icon: <TrendingIcon />, name: "Predictive Analytics", desc: "Forecasting, recommendations" },
-        { icon: <EyeIcon />, name: "Computer Vision", desc: "Image recognition, NLP" },
-      ],
-    },
+    }
   ];
 
   const goPrev = () => setServicesSlide((s) => (s === 0 ? 2 : s - 1));
@@ -179,8 +179,8 @@ const ForClients = () => {
           <h1 className="for-clients-title">For Clients</h1>
           <div className="for-clients-title-line"></div>
           <p className="for-clients-hero-desc">
-            Work with UW's top students on technology consulting projects. We deliver AI-driven solutions, 
-            system design, and strategic insights at no cost to you.
+            Work with UW's top students on large-scale machine learning projects! We deliver AI-driven solutions, 
+            system design, and strategic insights tailored specifically for your business.
           </p>
         </div>
       </div>

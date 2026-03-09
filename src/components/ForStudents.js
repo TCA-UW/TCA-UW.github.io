@@ -24,7 +24,6 @@ const ForStudents = () => {
     { src: ClientReveal, alt: "Members getting debriefed on their engagement for the quarter" },
     { src: DawgDaze, alt: "Our Fall 2025 DawgDaze event" },
     { src: InterestMeeting, alt: "Our Presidents leading a Fall 2025 Interest Meeting" },
-    { src: Workshop, alt: "Members at a collab workshop with DubHacks" },
     { src: Accenture2, alt: "Members at an Accenture panel event" },
     { src: Winners, alt: "Our Fall 2025 Sandbox Program mock case winners" }, 
   ];
@@ -80,7 +79,7 @@ const ForStudents = () => {
           <h1 className="for-students-title">For Students</h1>
           <div className="for-students-title-line"></div>
           <p className="for-students-hero-desc">
-             TCA offers workshops, case practice, career events, and hands-on engagements, preparing you for a competitive consulting landscape
+             TCA offers workshops, career events, and hands-on engagements, preparing you for a competitive consulting landscape
           </p>
         </div>
       </div>
@@ -98,53 +97,73 @@ const ForStudents = () => {
             </div>
             <div className="for-students-program-content-wrapper">
               <h3 className="for-students-program-title">Sandbox Program</h3>
-              <p className="for-students-program-subtitle">Workshops & Business Case Practice</p>
+              <p className="for-students-program-subtitle">ML Foundations & Consulting Practice</p>
               <p className="for-students-program-description">
-                Sandbox provides workshops, case challenges, and simulations to help you build fundamental consulting skills. Learn problem-structuring, business frameworks, and communication skills before diving into client work.
+                Sandbox is where members build a strong, high-level understanding of machine learning for real-world decision making. You’ll learn how to frame problems, compare approaches, and explain the tradeoffs behind different models—like you would in an ML consulting setting—before diving into deeper technical builds.
               </p>
               <ul className="for-students-program-bullets">
-                <li>Workshops, case challenges, and simulations</li>
-                <li>Problem-structuring & business frameworks</li>
-                <li>Communication skills</li>
-                <li>Build fundamentals before client work</li>
+                <li>High-level ML concepts for practical use cases</li>
+                <li>Model selection rationale & tradeoff analysis</li>
+                <li>Problem framing and stakeholder communication</li>
+                <li>Build confidence before client work and technical projects</li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Engagements - White section: Content left, Image right */}
+        {/* Nexus - White section: Image left, Content right */}
         <div className="for-students-program-section for-students-program-section-white">
           <div className="for-students-program-section-container">
             <div className="for-students-program-content-wrapper">
-              <h3 className="for-students-program-title">Engagements</h3>
-              <p className="for-students-program-subtitle">Client-Facing Projects</p>
+              <h3 className="for-students-program-title">Nexus Program</h3>
+              <p className="for-students-program-subtitle">Project-Based ML Development</p>
               <p className="for-students-program-description">
-                Work on real projects with startups, nonprofits, and businesses. Join Tech, Business, or PM subteams to deliver professional solutions and interact directly with clients.
+                Nexus is a project-based course designed to teach members how to build real-world machine learning projects.
+                It’s more technical and hands-on than Sandbox, helping you develop the skills needed to contribute confidently on client engagements.
               </p>
               <ul className="for-students-program-bullets">
-                <li>Real projects with startups, nonprofits, and businesses</li>
-                <li>Tech, Business, or PM subteams</li>
-                <li>Professional deliverables & client interaction</li>
+                <li>End-to-end ML project development</li>
+                <li>Implement LLM pipelines, RAG systems, and CV models</li>
+                <li>Version control, deployment, and production workflows</li>
+                <li>Technical mentorship and code reviews</li>
               </ul>
             </div>
+            <div className="for-students-program-visual">
+              <div className="for-students-program-image-wrapper">
+                <img src={Workshop} alt="Nexus program" />
+              </div>
+              <p className="for-students-program-caption">Hands-on development workshops to get engagement-ready</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Engagements - Navy section: Content left, Image right */}
+        <div className="for-students-program-section for-students-program-section-navy">
+          <div className="for-students-program-section-container">
             <div className="for-students-program-visual">
               <div className="for-students-program-image-wrapper">
                 <img src={engagementsImage} alt="Engagements program" />
               </div>
               <p className="for-students-program-caption"></p>
             </div>
+            <div className="for-students-program-content-wrapper">
+              <h3 className="for-students-program-title">Engagements</h3>
+              <p className="for-students-program-subtitle">Client-Facing Projects</p>
+              <p className="for-students-program-description">
+                Work on real projects with startups, nonprofits, and businesses. Join our Analyst, Developer, or Project Management subteams to deliver professional solutions and interact directly with clients.
+              </p>
+              <ul className="for-students-program-bullets">
+                <li>Real projects with startups, nonprofits, and businesses</li>
+                <li>Analyst, Developer, or Project Management subteams</li>
+                <li>Professional deliverables & client interaction</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        {/* Career Events - Navy section: Image left, Content right */}
-        <div className="for-students-program-section for-students-program-section-navy">
+        {/* Career Events - White section: Image left, Content right */}
+        <div className="for-students-program-section for-students-program-section-white">
           <div className="for-students-program-section-container">
-            <div className="for-students-program-visual">
-              <div className="for-students-program-image-wrapper">
-                <img src={Accenture1} alt="Career Events program" />
-              </div>
-              <p className="for-students-program-caption">Our members at an Accenture panel event</p>
-            </div>
             <div className="for-students-program-content-wrapper">
               <h3 className="for-students-program-title">Career Events</h3>
               <p className="for-students-program-subtitle">Guest Lectures & Networking</p>
@@ -158,12 +177,24 @@ const ForStudents = () => {
                 <li>Networking events</li>
               </ul>
             </div>
+            <div className="for-students-program-visual">
+              <div className="for-students-program-image-wrapper">
+                <img src={Accenture1} alt="Career Events program" />
+              </div>
+              <p className="for-students-program-caption">Our members at an Accenture panel event</p>
+            </div>
           </div>
         </div>
 
-        {/* Social Events - White section: Content left, Image right */}
-        <div className="for-students-program-section for-students-program-section-white">
+        {/* Social Events - Navy section: Content left, Image right */}
+        <div className="for-students-program-section for-students-program-section-navy">
           <div className="for-students-program-section-container">
+            <div className="for-students-program-visual">
+              <div className="for-students-program-image-wrapper">
+                <img src={Social} alt="TCA social events" />
+              </div>
+              <p className="for-students-program-caption">Members at a TCA Friendsgiving Potluck</p>
+            </div>
             <div className="for-students-program-content-wrapper">
               <h3 className="for-students-program-title">Social Events</h3>
               <p className="for-students-program-subtitle">Community & Culture</p>
@@ -177,28 +208,23 @@ const ForStudents = () => {
                 <li>Opportunities to connect across cohorts</li>
               </ul>
             </div>
-            <div className="for-students-program-visual">
-              <div className="for-students-program-image-wrapper">
-                <img src={Social} alt="TCA social events" />
-              </div>
-              <p className="for-students-program-caption">Members at a TCA Friendsgiving Potluck</p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Wave: white -> navy (Subteams section navy) */}
+      {/* Wave: navy -> white (Subteams section white) */}
       <svg className="for-students-divider" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,0 L0,0 Z" fill="#ffffff" />
-        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#062031" />
+        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,0 L0,0 Z" fill="#062031" />
+        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
 
-      {/* Subteams Section - navy, outside the wave */}
+      {/* Subteams Section - white, outside the wave */}
       <section ref={subteamsRef} id="subteams" className="for-students-subteams">
         <div className="for-students-section-inner">
-          <h2 className="for-students-section-title for-students-section-title-dark">Subteams</h2>
-          <p className="for-students-section-desc for-students-section-desc-dark">
-            Each engagement has a project manager, tech subteam, and business subteam—each bringing unique expertise.
+          <h2 className="for-students-section-title">Subteams</h2>
+          <p className="for-students-section-desc">
+            Engagement teams are intentionally not siloed. In Quarter 1, anyone can do anything—research, modeling, prototyping, and
+            building—while PMs keep the team aligned. In Quarter 2, Developers take point on implementation and delivery.
           </p>
 
           <div className="for-students-subteams-grid">
@@ -211,26 +237,12 @@ const ForStudents = () => {
                   <path d="M8 9h8M8 13h8" strokeLinecap="round" />
                 </svg>
               </div>
-              <h3 className="for-students-subteam-title">Tech</h3>
+              <h3 className="for-students-subteam-title">Analysis &amp; Development</h3>
               <p className="for-students-subteam-desc">
-                System design and development. Architecture, implementation, and scalable solutions for clients.
+                In Quarter 1, everyone contributes across the full workflow—scoping, analysis, prototyping, and building. In Quarter 2,
+                Developers take point on implementation and shipping the solution.
               </p>
-              <span className="for-students-role-tag">Technical Focus</span>
-            </div>
-
-            <div className="for-students-subteam-card">
-              <div className="for-students-subteam-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="2" y="6" width="20" height="12" rx="2" />
-                  <path d="M6 10H18M6 14H18" strokeLinecap="round" />
-                  <circle cx="12" cy="4" r="2" />
-                </svg>
-              </div>
-              <h3 className="for-students-subteam-title">Business</h3>
-              <p className="for-students-subteam-desc">
-                Market research, data analysis, and strategy. Validating solutions and aligning with business goals.
-              </p>
-              <span className="for-students-role-tag">Strategic Focus</span>
+              <span className="for-students-role-tag">Solution Focus</span>
             </div>
 
             <div className="for-students-subteam-card">
@@ -249,14 +261,16 @@ const ForStudents = () => {
             </div>
           </div>
 
-          <p className="for-students-subteams-note">You can only join one subteam per engagement.</p>
+          <p className="for-students-subteams-note">
+            You can only join one subteam per engagement, but Quarter 1 is intentionally cross-functional.
+          </p>
         </div>
       </section>
 
-      {/* Wave: navy -> white (Quarter Highlights section white) */}
+      {/* Wave: white -> navy (Highlights section navy) */}
       <svg className="for-students-divider" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#ffffff" />
-        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,0 L0,0 Z" fill="#062031" />
+        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#062031" />
+        <path d="M0,60 Q300,0 600,60 T1200,60 L1200,0 L0,0 Z" fill="#ffffff" />
       </svg>
 
       {/* Highlights - in the navy wave below subteams */}

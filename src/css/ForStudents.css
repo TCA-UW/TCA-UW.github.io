@@ -192,11 +192,15 @@
   max-width: 450px; /* Sandbox */
 }
 
-.for-students-programs .for-students-program-section:nth-of-type(3) .for-students-program-image-wrapper {
-  max-width: 480px; /* Career Events (Accenture image) */
+.for-students-programs .for-students-program-section:nth-of-type(2) .for-students-program-image-wrapper {
+  max-width: 560px; /* Nexus */
 }
 
 .for-students-programs .for-students-program-section:nth-of-type(4) .for-students-program-image-wrapper {
+  max-width: 480px; /* Career Events (Accenture image) */
+}
+
+.for-students-programs .for-students-program-section:nth-of-type(5) .for-students-program-image-wrapper {
   max-width: 440px; /* Social Events image */
 }
 
@@ -324,16 +328,16 @@
 .for-students-subteams {
   padding: 55px 40px 5px;
   margin-top: -80px;
-  background: var(--navy);
-  color: white;
+  background: white;
+  color: var(--navy);
 }
 
 .for-students-subteams .for-students-section-title-dark {
-  color: white;
+  color: var(--navy);
 }
 
 .for-students-subteams .for-students-section-desc-dark {
-  color: rgba(255, 255, 255, 0.85);
+  color: #475569;
 }
 
 .for-students-subteams .for-students-section-title,
@@ -348,7 +352,7 @@
 
 .for-students-subteams-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 65px;
   text-align: left;
   margin-bottom: 32px;
@@ -357,10 +361,9 @@
 .for-students-subteam-card {
   padding: 36px 28px;
   border-radius: 16px;
-  border: 2px solid transparent;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(10px);
+  border: 1px solid rgba(6, 32, 49, 0.12);
+  background: rgba(6, 32, 49, 0.03);
+  box-shadow: 0 6px 24px rgba(6, 32, 49, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -373,7 +376,6 @@
 
 .for-students-subteams.fs-in-view .for-students-subteam-card:nth-child(1) { animation-delay: 0.4s; }
 .for-students-subteams.fs-in-view .for-students-subteam-card:nth-child(2) { animation-delay: 0.5s; }
-.for-students-subteams.fs-in-view .for-students-subteam-card:nth-child(3) { animation-delay: 0.6s; }
 
 .for-students-subteam-card::before {
   content: '';
@@ -387,9 +389,9 @@
 
 .for-students-subteam-card:hover {
   transform: translateY(-6px);
-  border-color: #216476;
-  background: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  border-color: rgba(0, 174, 239, 0.55);
+  background: rgba(0, 174, 239, 0.06);
+  box-shadow: 0 12px 32px rgba(6, 32, 49, 0.18);
 }
 
 .for-students-subteam-icon {
@@ -413,14 +415,14 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: white;
+  color: var(--navy);
   margin-bottom: 12px;
 }
 
 .for-students-subteam-desc {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #475569;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -440,7 +442,7 @@
 .for-students-subteams-note {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
-  color: #ffffff;
+  color: #475569;
   font-style: italic;
   text-align: center;
   margin: 0;
@@ -449,8 +451,8 @@
 /* Quarter Highlights - navy section in the wave below subteams */
 .for-students-highlights {
   padding: 64px 40px 60px;
-  background: white;
-  color: var(--navy);
+  background: var(--navy);
+  color: white;
 }
 
 .for-students-highlights-inner {
@@ -458,11 +460,11 @@
 }
 
 .for-students-highlights-title {
-  color: var(--navy);
+  color: white;
 }
 
 .for-students-highlights-desc {
-  color: #475569;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .for-students-highlights .for-students-section-title,

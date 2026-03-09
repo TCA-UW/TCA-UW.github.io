@@ -10,36 +10,36 @@ const FAQ = () => {
   
   const faqData = [
     {
-      question: "What is TCA and what makes us unique?",
-      answer: "TCA (Technology Consulting Association) is the University of Washington's premier student-run technology consultancy. We're the only RSO on campus that bridges the gap between business and technology, offering specialized solutions in software development, data analysis, cloud computing, and digital transformation. Our unique approach combines technical expertise with strategic business thinking, providing real-world consulting experience while helping companies solve complex technology challenges."
+      question: "What is TCA?",
+      answer: "TCA (Technology Consulting Association) is UW’s student-run machine learning consulting and development club. We train members through workshops and project-based programs, then apply those skills on real client engagements."
     },
     {
-      question: "How can I join TCA?",
-      answer: "TCA recruits new members every quarter! We welcome applications from students across all majors who are passionate about technology and consulting. Visit our 'Join' page for detailed information about our application process, requirements, and upcoming recruitment cycles. We typically look for students who demonstrate strong problem-solving skills, teamwork, and a genuine interest in technology consulting."
+      question: "How do I join?",
+      answer: "We recruit on a cycle during the year. Check the Join page for the current application link, deadlines, and what to expect in the process."
     },
     {
-      question: "What majors and backgrounds do you accept?",
-      answer: "We welcome students from ALL majors! While we're affiliated with the Paul G. Allen School of Computer Science and Engineering, TCA values diversity in perspectives and skills. Our organization has both technical and business teams, so whether you're studying computer science, business, engineering, design, or any other field, there's a place for you. We believe diverse teams create better solutions."
+      question: "Do I need to be a CS major (or have ML experience) to apply?",
+      answer: "No. We welcome students from any major, and prior machine learning experience isn’t required. The biggest thing we look for is genuine interest and the willingness to learn and contribute."
     },
     {
-      question: "Do I need coding experience to join?",
-      answer: "Not necessarily! While our tech team requires some programming background (CSE coursework above CSE 122 or placement into CSE 123), our business team welcomes students from all backgrounds. We also offer regular workshops covering industry-level concepts including system design, database management, stakeholder analysis, and more. If you're passionate about technology and eager to learn, we'd love to have you!"
+      question: "What’s the difference between Analysts and Developers?",
+      answer: "There isn’t a difference during Quarter 1—teams are intentionally cross-functional. If you want to take on more business-heavy work (or more technical work), you can. “Developer” only means you’re designated to implement and ship the solution during Quarter 2."
     },
     {
-      question: "What's the time commitment?",
-      answer: "TCA is a significant but rewarding commitment. Members typically spend 5-6 hours per week on activities including weekly meetings, client projects, workshops, and team collaboration. We understand the importance of academic success and work to create a flexible, supportive environment. The networking opportunities, industry experience, and professional development you'll gain make this investment in your future career well worth it."
+      question: "What's the time commitment like for TCA?",
+      answer: "Members typically spend about 5–7 hours per week across meetings, workshops, and team work. Commitment varies by quarter depending on your project phase and deliverables."
     },
     {
-      question: "What types of projects do you work on?",
-      answer: "Our projects span various industries and technologies. We've worked on web applications, data analytics solutions, cloud infrastructure, mobile apps, and digital transformation initiatives. Projects range from startups looking to scale their technology to established companies seeking to modernize their systems. Each project provides hands-on experience with real clients, industry-standard tools, and professional development opportunities."
+      question: "What programs does TCA offer?",
+      answer: "Sandbox covers high-level ML foundations and decision-making: how to choose approaches, explain tradeoffs, and communicate with stakeholders. Nexus is more technical and hands-on, focused on building real ML projects with modern workflows."
     },
     {
-      question: "What skills will I develop?",
-      answer: "TCA members develop both technical and soft skills essential for consulting careers. Technical skills include software development, data analysis, cloud computing, system design, and project management. Soft skills include client communication, presentation abilities, teamwork, problem-solving, and strategic thinking. You'll also gain experience with industry tools, methodologies, and best practices used by top consulting firms."
+      question: "What do engagements look like?",
+      answer: "Engagements are client-facing projects where teams scope a problem, propose an approach, and deliver a working solution and/or clear recommendations. You’ll practice both technical execution and consulting-style communication."
     },
     {
-      question: "How does TCA differ from other consulting clubs?",
-      answer: "TCA is unique as the only RSO on campus offering technology-focused consulting services. While other consulting clubs focus on business strategy, we specialize in technology solutions and digital transformation. Our members work directly with clients on technical projects, gaining hands-on experience with cutting-edge technologies. This technical focus sets us apart and prepares members for careers in tech consulting, product management, and technology leadership roles."
+      question: "How is TCA different from other consulting clubs?",
+      answer: "Our work is ML-first and build-oriented. Instead of focusing only on cases and strategy, we train members to build and deliver real machine learning solutions, then apply that experience on client engagements."
     }
   ];
 

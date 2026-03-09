@@ -55,13 +55,16 @@
 .hero-text {
   max-width: 600px;
   text-align: left !important;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: joinHeroFadeUp 0.7s ease 0.2s forwards;
 }
 
 .hero-description {
   font-size: 1.4rem;
   color: #475569;
   line-height: 1.7;
-  margin-bottom: 40px !important;
+  margin-bottom: 28px !important;
   text-align: left !important;
 }
 
@@ -76,7 +79,7 @@
   font-size: 1.4rem;
   transition: background-color 0.3s ease;
   text-align: left;
-  margin-top: 30px;
+  margin-top: 16px;
 }
 
 .hero-apply-button:hover {
@@ -441,6 +444,17 @@
 
 /* Keyframe Animations */
 @keyframes titleFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes joinHeroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);

@@ -17,8 +17,9 @@ const MiniAbout = () => {
           <div className="mini-about-content">
             <h2>About TCA</h2>
             <p>
-              The Technology Consulting Association at the University of Washington connects UW's brightest minds
-              with real-world business challenges. We're a student-led consulting org dedicated to delivering AI-driven solutions and strategic insights to clients across industries. From startups to Fortune 500s, we partner with organizations ready to innovate.
+              The Technology Consulting Association at the University of Washington is a student-led organization at the intersection of machine learning
+              and strategic consulting. We pair top UW talent with real-world clients, translating complex technical challenges into actionable solutions.
+              From startups to Fortune 500s, we partner with organizations ready to innovate.
             </p>
             <a href="/about" className="btn-primary">Learn More</a>
           </div>

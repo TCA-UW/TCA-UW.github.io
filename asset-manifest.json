@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.dd20cf27.css",
-    "main.js": "/static/js/main.27d28a2d.js",
+    "main.js": "/static/js/main.75028d01.js",
     "static/js/453.0120a0e1.chunk.js": "/static/js/453.0120a0e1.chunk.js",
     "static/media/Tristan.png": "/static/media/Tristan.01e0053ebe3d759d1960.png",
     "static/media/Tanishka.png": "/static/media/Tanishka.95da0f10a2c7e305ac65.png",
     "static/media/Joelle.png": "/static/media/Joelle.e4db6d25975f0b8f9ea5.png",
     "static/media/GroupPic2.png": "/static/media/GroupPic2.eb908e1a0a70bc8d7991.png",
     "static/media/Team30.png": "/static/media/Team30.358e361d567b6f18b575.png",
-    "static/media/Bhavya.png": "/static/media/Bhavya.95700186629a8a0b4ca4.png",
     "static/media/Aanika.png": "/static/media/Aanika.d6ee052b3cfdf41de659.png",
     "static/media/Ananya.png": "/static/media/Ananya.f6ccc24b20c638748db7.png",
     "static/media/Calista.png": "/static/media/Calista.aaeb114b7fe5c1ede73f.png",
@@ -24,6 +23,7 @@
     "static/media/GroupPic1.jpg": "/static/media/GroupPic1.eb0da25719ac72c3f752.jpg",
     "static/media/Helen.jpg": "/static/media/Helen.a24562dbc807993097f6.jpg",
     "static/media/Justin.jpg": "/static/media/Justin.9a13529f38a778e1015d.jpg",
+    "static/media/Bhavya.jpg": "/static/media/Bhavya.169a2bf3dbcaaa223f14.jpg",
     "static/media/Kian.jpg": "/static/media/Kian.db12f433f67eca3ae61d.jpg",
     "static/media/ChloeC.jpg": "/static/media/ChloeC.e40d6d56aa9a1e9ecbb6.jpg",
     "static/media/ChloeG.jpg": "/static/media/ChloeG.546a0253886a87bc005f.jpg",
@@ -63,11 +63,11 @@
     "static/media/web-programming.png": "/static/media/web-programming.a78f8477023ede203f83.png",
     "index.html": "/index.html",
     "main.dd20cf27.css.map": "/static/css/main.dd20cf27.css.map",
-    "main.27d28a2d.js.map": "/static/js/main.27d28a2d.js.map",
+    "main.75028d01.js.map": "/static/js/main.75028d01.js.map",
     "453.0120a0e1.chunk.js.map": "/static/js/453.0120a0e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd20cf27.css",
-    "static/js/main.27d28a2d.js"
+    "static/js/main.75028d01.js"
   ]
 }

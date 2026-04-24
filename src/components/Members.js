@@ -8,7 +8,7 @@ import Primmy from "../assets/headshots/Primmy.jpg";
 import Angie from "../assets/headshots/Angie.jpg";
 import Simon from "../assets/headshots/Simon.jpg";
 import Hannah from "../assets/headshots/Hannah.jpg";
-import Bhavya from "../assets/headshots/Bhavya.png";
+import Bhavya from "../assets/headshots/Bhavya.jpg";
 import Justin from "../assets/headshots/Justin.jpg";
 
 const members = [
@@ -43,7 +43,7 @@ const members = [
   {
     name: "Bhavya Rajput",
     position: "Director of Marketing",
-    major: "Informatics",
+    major: "Financial Economics",
     image: Bhavya,
     linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/"
   },

@@ -9,7 +9,7 @@ import TT3 from "../assets/headshots/Ulysses.jpeg";
 import BT1 from "../assets/headshots/Kian.jpg";
 import Tashia from "../assets/headshots/Tashia.png";
 import BT9 from "../assets/headshots/ChloeC.jpg";
-import Bhavya from "../assets/headshots/Bhavya.png";
+import Bhavya from "../assets/headshots/Bhavya.jpg";
 import Ananya from "../assets/headshots/Ananya.png";
 import Prisha from "../assets/headshots/Prisha.png";
 import Tanishka from "../assets/headshots/Tanishka.png";
@@ -32,7 +32,7 @@ const cohorts = [
       { name: "Brianna Zhou", major: "Informatics", image: PM1, linkedin: "https://www.linkedin.com/in/brianna-zhou/" },
       { name: "Gus Abramowitz", major: "Information Systems", image: PM2, linkedin: "https://www.linkedin.com/in/gus-abramowitz-4328122aa/" },
       { name: "Helen Wu", major: "Informatics", image: PM3, linkedin: "https://www.linkedin.com/in/heleninformation/" },
-      { name: "Bhavya Rajput", major: "Informatics", image: Bhavya, linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/" },
+      { name: "Bhavya Rajput", major: "Financial Economics", image: Bhavya, linkedin: "https://www.linkedin.com/in/bhavya-rajput-644217256/" },
       { name: "Kian Gaskill", major: "Business Administration", image: BT1, linkedin: "https://www.linkedin.com/in/kian-gaskill-301954348/" },
     ],
     techTeam: [

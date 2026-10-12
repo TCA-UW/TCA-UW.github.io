@@ -38,14 +38,14 @@ const Join = () => {
           <div className="title-line"></div>
           <div className="hero-text">
             <p className="hero-description">
-              Applications are now open for our Spring 2026 cohort and are due on Friday, 4/3, at 11:59 PM!
+              Applications are now open for our Fall 2026 cohort and are due on Wednesday, 10/14, at 11:59 PM!
               <br />
               <br />
               No prior machine learning experience is necessary to apply! We primarily look for members with a strong interest in technology, so beginners and students across all majors
               are encouraged to apply!
             </p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfnyOF8BopySp78Y0f7k-r8sGhQf6bjVWackL660hBgfHsW8A/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSehkK2a5jRmSXbUT4-zYSBWixWYujUImAXOu5A_UA-cVzv2Pw/viewform"
               className="hero-apply-button"
               target="_blank"
               rel="noopener noreferrer"
